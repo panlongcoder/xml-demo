@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.mapper.HospitalXmlFileMapper">
+
+
+    <insert id="insert" parameterType="com.example.entity.HospitalXmlFile">
+        insert into hm_tmp_xml(type, hospital_code, content)
+        values (#{type}, #{hospitalCode}, #{content})
+    </insert>
+    <update id="update">
+        update hm_tmp_xml
+        set content = #{content}
+        where hospital_code = #{hospitalCode}
+          and type = #{type}
+    </update>
+    <select id="selectOne" resultType="com.example.entity.HospitalXmlFile">
+        select *
+        from hm_tmp_xml
+        where hospital_code = #{hospitalCode}
+          and type = #{type}
+    </select>
+</mapper>

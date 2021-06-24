@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataExchange>
+    <Header>
+        <DocumentId>机构编码-ENTERPRISE_INFO-20210624175628333-24994</DocumentId>
+        <OperateType>Add</OperateType>
+        <BusinessActivityIdentification>NEWOMAR</BusinessActivityIdentification>
+        <ReportOrgCode>上报机构代码</ReportOrgCode>
+        <License>上报机构授权码</License>
+        <ReportZoneCode>上报地区代码</ReportZoneCode>
+    </Header>
+    <EventBody>
+        <ENTERPRISE_INFO_LIST>
+                    <ENTERPRISE_INFO id="22381">
+                        <ENTERPRISE_NAME></ENTERPRISE_NAME>
+                        <CREDIT_CODE></CREDIT_CODE>
+                        <ADDRESS_CODE>12341234</ADDRESS_CODE>
+                        <ECONOMIC_TYPE_CODE>暂无描述</ECONOMIC_TYPE_CODE>
+                        <INDUSTRY_CATEGORY_CODE></INDUSTRY_CATEGORY_CODE>
+                        <BUSINESS_SCALE_CODE></BUSINESS_SCALE_CODE>
+                        <ADDRESS_DETAIL>团体地址</ADDRESS_DETAIL>
+                        <ADDRESS_ZIP_CODE>12341234</ADDRESS_ZIP_CODE>
+                        <ENTERPRISE_CONTACT>联系人</ENTERPRISE_CONTACT>
+                        <CONTACT_TELPHONE></CONTACT_TELPHONE>
+                        <ISSUBSIDIARY>0</ISSUBSIDIARY>
+                        <TWOLEVELCODE></TWOLEVELCODE>
+                        <AREA_CODE></AREA_CODE>
+                        <ORG_CODE></ORG_CODE>
+                        <WRITE_UNIT>测试111222</WRITE_UNIT>
+                        <WRITE_PERSON>联系人</WRITE_PERSON>
+                        <WRITE_PERSON_TEL>13412341234</WRITE_PERSON_TEL>
+                        <WRITE_DATE>20200421</WRITE_DATE>
+                        <REPORT_UNIT>河南神火集团职工总医院</REPORT_UNIT>
+                        <REPORT_PERSON>范旭</REPORT_PERSON>
+                        <REPORT_PERSON_TEL>03706082167</REPORT_PERSON_TEL>
+                        <REPORT_DATE></REPORT_DATE>
+                        <AUDIT_INFO>
+                            <AUDITSTATUS></AUDITSTATUS>
+                            <AUDITINFO></AUDITINFO>
+                            <AUDITDATE></AUDITDATE>
+                            <AUDITOR_NAME></AUDITOR_NAME>
+                            <AUDIT_ORG></AUDIT_ORG>
+                        </AUDIT_INFO>
+                    </ENTERPRISE_INFO>
+        </ENTERPRISE_INFO_LIST>
+    </EventBody>
+</DataExchange>

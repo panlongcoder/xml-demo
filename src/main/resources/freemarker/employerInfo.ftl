@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataExchange>
+    <Header>
+        <DocumentId>${header.documentId}</DocumentId>
+        <OperateType>${header.operateType}</OperateType>
+        <BusinessActivityIdentification>${header.businessActivityIdentification}</BusinessActivityIdentification>
+        <ReportOrgCode>${header.reportOrgCode}</ReportOrgCode>
+        <License>${header.license}</License>
+        <ReportZoneCode>${header.reportZoneCode}</ReportZoneCode>
+    </Header>
+    <EventBody>
+        <ENTERPRISE_INFO_LIST>
+            <#if enterpriseInfoList??>
+                <#list enterpriseInfoList as enterpriseInfo>
+                    <ENTERPRISE_INFO id="${enterpriseInfo.id}">
+                        <ENTERPRISE_NAME>${enterpriseInfo.name!}</ENTERPRISE_NAME>
+                        <CREDIT_CODE>${enterpriseInfo.creditCode!}</CREDIT_CODE>
+                        <ADDRESS_CODE>${enterpriseInfo.addressCode!}</ADDRESS_CODE>
+                        <ECONOMIC_TYPE_CODE>${(enterpriseInfo.economicTypeCode)!}</ECONOMIC_TYPE_CODE>
+                        <INDUSTRY_CATEGORY_CODE>${enterpriseInfo.industryCategoryCode!}</INDUSTRY_CATEGORY_CODE>
+                        <BUSINESS_SCALE_CODE>${(enterpriseInfo.businessScaleCode)!}</BUSINESS_SCALE_CODE>
+                        <ADDRESS_DETAIL>${enterpriseInfo.addressDetail!}</ADDRESS_DETAIL>
+                        <ADDRESS_ZIP_CODE>${(enterpriseInfo.addressZipCode)!}</ADDRESS_ZIP_CODE>
+                        <ENTERPRISE_CONTACT>${enterpriseInfo.enterpriseContact!}</ENTERPRISE_CONTACT>
+                        <CONTACT_TELPHONE>${enterpriseInfo.contactTelephone!}</CONTACT_TELPHONE>
+                        <ISSUBSIDIARY>${enterpriseInfo.isSubsidiary!}</ISSUBSIDIARY>
+                        <TWOLEVELCODE>${(enterpriseInfo.twoLevelCode)!}</TWOLEVELCODE>
+                        <AREA_CODE>${enterpriseInfo.areaCode!}</AREA_CODE>
+                        <ORG_CODE>${enterpriseInfo.orgCode!}</ORG_CODE>
+                        <WRITE_UNIT>${enterpriseInfo.writeUnit!}</WRITE_UNIT>
+                        <WRITE_PERSON>${enterpriseInfo.writePerson!}</WRITE_PERSON>
+                        <WRITE_PERSON_TEL>${enterpriseInfo.writePersonTel!}</WRITE_PERSON_TEL>
+                        <WRITE_DATE>${enterpriseInfo.writeDate!}</WRITE_DATE>
+                        <REPORT_UNIT>${enterpriseInfo.reportUnit!}</REPORT_UNIT>
+                        <REPORT_PERSON>${enterpriseInfo.reportPerson!}</REPORT_PERSON>
+                        <REPORT_PERSON_TEL>${enterpriseInfo.reportPersonTel!}</REPORT_PERSON_TEL>
+                        <REPORT_DATE>${enterpriseInfo.reportDate!}</REPORT_DATE>
+                        <AUDIT_INFO>
+                            <AUDITSTATUS>${enterpriseInfo.auditStatus!}</AUDITSTATUS>
+                            <AUDITINFO>${enterpriseInfo.auditInfo!}</AUDITINFO>
+                            <AUDITDATE>${enterpriseInfo.auditDate!}</AUDITDATE>
+                            <AUDITOR_NAME>${enterpriseInfo.auditorName!}</AUDITOR_NAME>
+                            <AUDIT_ORG>${enterpriseInfo.auditOrg!}</AUDIT_ORG>
+                        </AUDIT_INFO>
+                    </ENTERPRISE_INFO>
+                </#list>
+            </#if>
+        </ENTERPRISE_INFO_LIST>
+    </EventBody>
+</DataExchange>
