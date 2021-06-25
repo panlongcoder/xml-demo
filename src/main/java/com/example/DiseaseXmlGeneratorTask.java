@@ -18,7 +18,6 @@ import com.example.service.HealthExamRecordService;
 import com.example.service.HospitalXmlFileService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -49,11 +48,10 @@ public class DiseaseXmlGeneratorTask {
     @Resource
     private HospitalXmlFileService hospitalXmlFileService;
 
-
     /**
      * 用人单位信息
      */
-    @Scheduled(cron = "* * * * * ?")
+//   @Scheduled(cron = "* * 0/1 * * ?")
     public void generateEnterpriseInfoXml() throws FileNotFoundException {
         LOG.info("用人单位信息接口开始运行");
         List<EnterpriseInfo> list = enterpriseInfoService.list();
@@ -78,7 +76,7 @@ public class DiseaseXmlGeneratorTask {
      *
      * @throws FileNotFoundException
      */
-    @Scheduled(cron = "*/15 * * * * ?")
+//    @Scheduled(cron = "* * 0/1 * * ?")
     public void generateHealthExamRecordXml() throws FileNotFoundException {
         LOG.info("健康档案信息信息接口开始运行");
         List<HealthExamRecord> list = examRecordService.list();
