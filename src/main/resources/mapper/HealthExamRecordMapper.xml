@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.mapper.HealthExamRecordMapper">
+
+    <select id="list" resultType="com.example.entity.HealthExamRecord">
+        select * from VW_ZYB_TJZXX0
+    </select>
+    <select id="listExamConclusion" resultType="com.example.entity.ExamConclusion">
+        select * from vw_zyb_tjjl00
+    </select>
+    <select id="listExamItemResult" resultType="com.example.entity.ExamItemResult">
+        select * from VW_ZYB_TJJCXM
+    </select>
+
+</mapper>

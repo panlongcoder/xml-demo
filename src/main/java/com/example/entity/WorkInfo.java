@@ -4,6 +4,8 @@ import javax.validation.constraints.NotBlank;
 import java.io.Serializable;
 
 /**
+ * 工作人的信息
+ *
  * @author dragon
  * @date 2021/6/22
  */
@@ -11,6 +13,11 @@ public class WorkInfo implements Serializable {
 
     private static final long serialVersionUID = 7119209451119722L;
 
+    /**
+     * 体检号
+     */
+    @NotBlank(message = "体检号不能为空")
+    private String tjh000;
     /**
      * 姓名
      */
@@ -91,5 +98,14 @@ public class WorkInfo implements Serializable {
 
     public void setWorkerTelephone(String workerTelephone) {
         this.workerTelephone = workerTelephone;
+    }
+
+
+    public String getTjh000() {
+        return tjh000;
+    }
+
+    public void setTjh000(String tjh000) {
+        this.tjh000 = tjh000;
     }
 }

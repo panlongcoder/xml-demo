@@ -14,10 +14,15 @@ public class ExamItemResult implements Serializable {
     private static final long serialVersionUID = 792094511122349722L;
 
     /**
+     * 体检号
+     */
+    private String tjh000;
+
+    /**
      * 检查项目父级名称(检查指标名称一级节点名称)
      */
     @NotBlank(message = "检查项目父级名称不能为空")
-    private String examItemPName;
+    private String examItemPname;
 
     /**
      * 检查项目名称
@@ -69,13 +74,12 @@ public class ExamItemResult implements Serializable {
     @NotBlank(message = "是否异常不能为空")
     private String abnormal;
 
-
-    public String getExamItemPName() {
-        return examItemPName;
+    public String getExamItemPname() {
+        return examItemPname;
     }
 
-    public void setExamItemPName(String examItemPName) {
-        this.examItemPName = examItemPName;
+    public void setExamItemPname(String examItemPname) {
+        this.examItemPname = examItemPname;
     }
 
     public String getExamItemName() {
@@ -140,5 +144,13 @@ public class ExamItemResult implements Serializable {
 
     public void setAbnormal(String abnormal) {
         this.abnormal = abnormal;
+    }
+
+    public String getTjh000() {
+        return tjh000;
+    }
+
+    public void setTjh000(String tjh000) {
+        this.tjh000 = tjh000;
     }
 }

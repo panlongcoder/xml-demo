@@ -14,6 +14,11 @@ public class ExamConclusion implements Serializable {
     private static final long serialVersionUID = 79209451119722L;
 
     /**
+     * 团检号
+     */
+    private String tjh000;
+
+    /**
      * 职业病危害因素代码
      */
     @NotBlank(message = "职业病危害因素代码不能为空")
@@ -140,5 +145,13 @@ public class ExamConclusion implements Serializable {
 
     public void setHarmAgeMonth(String harmAgeMonth) {
         this.harmAgeMonth = harmAgeMonth;
+    }
+
+    public String getTjh000() {
+        return tjh000;
+    }
+
+    public void setTjh000(String tjh000) {
+        this.tjh000 = tjh000;
     }
 }

@@ -14,7 +14,7 @@ public class EnterpriseInfo implements Serializable {
 
     private static final long serialVersionUID = 7920217109451119722L;
 
-    @NotNull(message = "团检id不能为空")
+    @NotNull(message = "团检团体id不能为空")
     private String id;
 
     @NotBlank(message = "用人单位名称不能为空")

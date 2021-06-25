@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DataExchange>
     <Header>
-        <DocumentId>机构编码-ENTERPRISE_INFO-20210624175628333-24994</DocumentId>
+        <DocumentId>机构编码-ENTERPRISE_INFO-20210625112646008-11496</DocumentId>
         <OperateType>Add</OperateType>
         <BusinessActivityIdentification>NEWOMAR</BusinessActivityIdentification>
         <ReportOrgCode>上报机构代码</ReportOrgCode>
