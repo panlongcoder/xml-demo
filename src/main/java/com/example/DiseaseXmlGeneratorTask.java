@@ -18,6 +18,7 @@ import com.example.service.HealthExamRecordService;
 import com.example.service.HospitalXmlFileService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -48,10 +49,15 @@ public class DiseaseXmlGeneratorTask {
     @Resource
     private HospitalXmlFileService hospitalXmlFileService;
 
+    @Scheduled(cron = "0 0 0/1 * * ?")
+    public void generate() throws FileNotFoundException {
+        generateEnterpriseInfoXml();
+        generateHealthExamRecordXml();
+    }
+
     /**
      * 用人单位信息
      */
-//   @Scheduled(cron = "* * 0/1 * * ?")
     public void generateEnterpriseInfoXml() throws FileNotFoundException {
         LOG.info("用人单位信息接口开始运行");
         List<EnterpriseInfo> list = enterpriseInfoService.list();
@@ -76,12 +82,12 @@ public class DiseaseXmlGeneratorTask {
      *
      * @throws FileNotFoundException
      */
-//    @Scheduled(cron = "* * 0/1 * * ?")
     public void generateHealthExamRecordXml() throws FileNotFoundException {
         LOG.info("健康档案信息信息接口开始运行");
         List<HealthExamRecord> list = examRecordService.list();
         if (CollUtil.isEmpty(list)) {
             LOG.error("通过视图查询出来的[健康档案为空]");
+            return;
         }
         trimFiled(list);
         LOG.info("查询到的健康档案信息: {}", list);
@@ -89,9 +95,8 @@ public class DiseaseXmlGeneratorTask {
         Header header = buildHeader(BusinessActivityType.HEALTH_EXAM_RECORD, OperateType.Add);
         LOG.info("头部信息: {}", header);
         String content = examRecordService.generateHealthArchiveXml(header, list);
-
+        IoUtil.writeUtf8(new FileOutputStream("./healthExamRecord.xml"), true, content);
         saveXml("healthExamRecord.xml", content, "410040", 1);
-
     }
 
     private void trimFiled(List<?> list) {

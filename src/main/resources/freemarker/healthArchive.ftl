@@ -113,11 +113,11 @@
                                     <!--每个危害因素对应一个结论，各类粉尘只需填写一个大类粉尘的结论即可 -->
                                     <EXAM_CONCLUSION>
                                         <!-- 职业病危害因素代码-->
-                                        <ITAM_CODE>${examConclusion.itamCode}</ITAM_CODE>
+                                        <ITAM_CODE>${examConclusion.itamCode!}</ITAM_CODE>
                                         <!--危害因素名称-->
-                                        <ITAM_NAME>${examConclusion.itamName}</ITAM_NAME>
+                                        <ITAM_NAME>${examConclusion.itamName!}</ITAM_NAME>
                                         <!-- 体检结论代码-->
-                                        <EXAM_CONCLUSION_CODE>${examConclusion.examConclusionCode}</EXAM_CONCLUSION_CODE>
+                                        <EXAM_CONCLUSION_CODE>${examConclusion.examConclusionCode!}</EXAM_CONCLUSION_CODE>
                                         <!--疑似职业病代码(见字典职业病类型，当体检结论位疑似职业病时，需填写该字段) -->
                                         <YSZYB_CODE>${examConclusion.yszybCode!}</YSZYB_CODE>
                                         <!--职业禁忌证名称(当体检结论是职业禁忌症时，需填写该字段)-->
@@ -151,11 +151,11 @@
                                         <!--检查结果-->
                                         <EXAM_RESULT>${examItemResult.examResult!}</EXAM_RESULT>
                                         <!--检查项目计量单位及参考值范围(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
-                                        <EXAM_ITEM_UNIT_CODE>${examItemResult.examItemUnitCode!!}</EXAM_ITEM_UNIT_CODE>
+                                        <EXAM_ITEM_UNIT_CODE>${examItemResult.examItemUnitCode!}</EXAM_ITEM_UNIT_CODE>
                                         <!--参考值范围小值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
-                                        <REFERENCE_RANGE_MIN>${examItemResult.referenceRangeMin!!}</REFERENCE_RANGE_MIN>
+                                        <REFERENCE_RANGE_MIN>${examItemResult.referenceRangeMin!}</REFERENCE_RANGE_MIN>
                                         <!--参考值范围大值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
-                                        <REFERENCE_RANGE_MAX>${examItemResult.referenceRangeMax!!}</REFERENCE_RANGE_MAX>
+                                        <REFERENCE_RANGE_MAX>${examItemResult.referenceRangeMax!}</REFERENCE_RANGE_MAX>
                                         <!--是否异常(0 正常、1 异常、3 未检查;当检查项目是胸片时，见胸片检查结果代码表)-->
                                         <ABNORMAL>${examItemResult.abnormal!}</ABNORMAL>
                                     </EXAM_ITEM_RESULT>
@@ -186,7 +186,7 @@
                             <!-- 审核状态代码(必填 07 省级审核通过)-->
                             <AUDITSTATUS>${healthExamRecord.auditStatus!}</AUDITSTATUS>
                             <!-- 审核意见 -->
-                            <AUDITINFO>${healthExamRecord!}</AUDITINFO>
+                            <AUDITINFO>${healthExamRecord.auditInfo!}</AUDITINFO>
                             <!-- 审核时间 -->
                             <AUDITDATE>${healthExamRecord.auditDate!}</AUDITDATE>
                             <!-- 审核人姓名 -->

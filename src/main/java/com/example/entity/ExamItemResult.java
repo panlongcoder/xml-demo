@@ -1,7 +1,6 @@
 package com.example.entity;
 
 import javax.validation.constraints.NotBlank;
-import java.io.Serializable;
 
 /**
  * 检查项目信息
@@ -9,9 +8,7 @@ import java.io.Serializable;
  * @author dragon
  * @date 2021/6/22
  */
-public class ExamItemResult implements Serializable {
-
-    private static final long serialVersionUID = 792094511122349722L;
+public class ExamItemResult {
 
     /**
      * 体检号
@@ -73,6 +70,14 @@ public class ExamItemResult implements Serializable {
      */
     @NotBlank(message = "是否异常不能为空")
     private String abnormal;
+
+    public String getTjh000() {
+        return tjh000;
+    }
+
+    public void setTjh000(String tjh000) {
+        this.tjh000 = tjh000;
+    }
 
     public String getExamItemPname() {
         return examItemPname;
@@ -146,11 +151,19 @@ public class ExamItemResult implements Serializable {
         this.abnormal = abnormal;
     }
 
-    public String getTjh000() {
-        return tjh000;
-    }
-
-    public void setTjh000(String tjh000) {
-        this.tjh000 = tjh000;
+    @Override
+    public String toString() {
+        return "ExamItemResult{" +
+                "tjh000='" + tjh000 + '\'' +
+                ", examItemPname='" + examItemPname + '\'' +
+                ", examItemName='" + examItemName + '\'' +
+                ", examItemCode='" + examItemCode + '\'' +
+                ", examResultType='" + examResultType + '\'' +
+                ", examResult='" + examResult + '\'' +
+                ", examItemUnitCode='" + examItemUnitCode + '\'' +
+                ", referenceRangeMin='" + referenceRangeMin + '\'' +
+                ", referenceRangeMax='" + referenceRangeMax + '\'' +
+                ", abnormal='" + abnormal + '\'' +
+                '}';
     }
 }

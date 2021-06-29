@@ -777,4 +777,65 @@ public class HealthExamRecord implements Serializable {
     public void setAuditOrg(String auditOrg) {
         this.auditOrg = auditOrg;
     }
+
+    @Override
+    public String toString() {
+        return "HealthExamRecord{" +
+                "id='" + id + '\'' +
+                ", enterpriseName='" + enterpriseName + '\'' +
+                ", creditCode='" + creditCode + '\'' +
+                ", economicTypeCode='" + economicTypeCode + '\'' +
+                ", industryCategoryCode='" + industryCategoryCode + '\'' +
+                ", businessScaleCode='" + businessScaleCode + '\'' +
+                ", addressCode='" + addressCode + '\'' +
+                ", addressDetail='" + addressDetail + '\'' +
+                ", addressZipCode='" + addressZipCode + '\'' +
+                ", enterpriseContact='" + enterpriseContact + '\'' +
+                ", contactTelephone='" + contactTelephone + '\'' +
+                ", allName='" + allName + '\'' +
+                ", enterpriseNameEmployer='" + enterpriseNameEmployer + '\'' +
+                ", creditCodeEmployer='" + creditCodeEmployer + '\'' +
+                ", economicTypeCodeEmployer='" + economicTypeCodeEmployer + '\'' +
+                ", industryCategoryCodeEmployer='" + industryCategoryCodeEmployer + '\'' +
+                ", businessScaleCodeEmployer='" + businessScaleCodeEmployer + '\'' +
+                ", addressCodeEmployer='" + addressCodeEmployer + '\'' +
+                ", allNameEmployer='" + allNameEmployer + '\'' +
+                ", tjh000='" + tjh000 + '\'' +
+                ", workName='" + workName + '\'' +
+                ", idCardTypeCode='" + idCardTypeCode + '\'' +
+                ", idCard='" + idCard + '\'' +
+                ", genderCode='" + genderCode + '\'' +
+                ", birthDate='" + birthDate + '\'' +
+                ", workerTelephone='" + workerTelephone + '\'' +
+                ", jcType='" + jcType + '\'' +
+                ", examTypeCode='" + examTypeCode + '\'' +
+                ", examDate='" + examDate + '\'' +
+                ", contactFactorCode='" + contactFactorCode + '\'' +
+                ", contactFactorOther='" + contactFactorOther + '\'' +
+                ", factorCode='" + factorCode + '\'' +
+                ", factorOther='" + factorOther + '\'' +
+                ", workTypeCode='" + workTypeCode + '\'' +
+                ", otherWorkType='" + otherWorkType + '\'' +
+                ", isReview='" + isReview + '\'' +
+                ", areaCode='" + areaCode + '\'' +
+                ", orgCode='" + orgCode + '\'' +
+                ", examConclusionList=" + examConclusionList +
+                ", examItemResultList=" + examItemResultList +
+                ", writePerson='" + writePerson + '\'' +
+                ", writeUnit='" + writeUnit + '\'' +
+                ", writePersonTelephone='" + writePersonTelephone + '\'' +
+                ", writeDate='" + writeDate + '\'' +
+                ", reportOrganCreditCode='" + reportOrganCreditCode + '\'' +
+                ", reportPerson='" + reportPerson + '\'' +
+                ", reportPersonTel='" + reportPersonTel + '\'' +
+                ", reportDate='" + reportDate + '\'' +
+                ", reportUnit='" + reportUnit + '\'' +
+                ", remark='" + remark + '\'' +
+                ", auditStatus='" + auditStatus + '\'' +
+                ", auditInfo='" + auditInfo + '\'' +
+                ", auditDate='" + auditDate + '\'' +
+                ", auditorName='" + auditorName + '\'' +
+                ", auditOrg='" + auditOrg + '\'' +
+                '}';
+    }
 }

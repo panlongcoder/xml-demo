@@ -19,7 +19,6 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.List;
 import java.util.Objects;
-import java.util.stream.Collectors;
 
 
 /**
@@ -29,7 +28,7 @@ import java.util.stream.Collectors;
 @Service
 public class HealthExamRecordService {
 
-    private static final Logger LOG = LoggerFactory.getLogger(EnterpriseInfoService.class);
+    private static final Logger LOG = LoggerFactory.getLogger(HealthExamRecordService.class);
 
     private static final TemplateEngine ENGINE = TemplateUtil.createEngine(new TemplateConfig("freemarker",
             TemplateConfig.ResourceMode.CLASSPATH));
@@ -37,7 +36,6 @@ public class HealthExamRecordService {
 
     @Resource
     private HealthExamRecordMapper mapper;
-
 
     public List<HealthExamRecord> list() {
         List<HealthExamRecord> list = mapper.list();
@@ -49,22 +47,14 @@ public class HealthExamRecordService {
                 .forEach(healthExamRecord -> {
                     String tjh000 = healthExamRecord.getTjh000();
                     if (StrUtil.isEmpty(tjh000)) {
-                        throw new RuntimeException("查询健康档案信息中,工作者信息中体检号为空");
-                    }
-                    List<ExamConclusion> examConclusions = mapper.listExamConclusion();
-                    if (CollUtil.isNotEmpty(examConclusions)) {
-                        examConclusions = examConclusions.stream()
-                                .filter(examConclusion -> tjh000.equals(examConclusion.getTjh000()))
-                                .collect(Collectors.toList());
-
+                        LOG.info("查询体检结论开始");
+                        List<ExamConclusion> examConclusions = mapper.listExamConclusion(tjh000);
+                        LOG.info("查询体检结论结束");
                         healthExamRecord.setExamConclusionList(examConclusions);
-                    }
-                    List<ExamItemResult> examItemResults = mapper.listExamItemResult();
-                    if (CollUtil.isNotEmpty(examItemResults)) {
-                        examItemResults = examItemResults.stream()
-                                .filter(examItemResult -> tjh000.equals(examItemResult.getTjh000()))
-                                .collect(Collectors.toList());
 
+                        LOG.info("查询检查项目开始");
+                        List<ExamItemResult> examItemResults = mapper.listExamItemResult(tjh000);
+                        LOG.info("查询检查项目结束");
                         healthExamRecord.setExamItemResultList(examItemResults);
                     }
                 });

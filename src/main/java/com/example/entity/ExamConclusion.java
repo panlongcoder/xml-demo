@@ -154,4 +154,20 @@ public class ExamConclusion implements Serializable {
     public void setTjh000(String tjh000) {
         this.tjh000 = tjh000;
     }
+
+    @Override
+    public String toString() {
+        return "ExamConclusion{" +
+                "tjh000='" + tjh000 + '\'' +
+                ", itamCode='" + itamCode + '\'' +
+                ", itamName='" + itamName + '\'' +
+                ", examConclusionCode='" + examConclusionCode + '\'' +
+                ", yszybCode='" + yszybCode + '\'' +
+                ", zyjjzName='" + zyjjzName + '\'' +
+                ", qtjbName='" + qtjbName + '\'' +
+                ", harmStartDate='" + harmStartDate + '\'' +
+                ", harmAgeYear='" + harmAgeYear + '\'' +
+                ", harmAgeMonth='" + harmAgeMonth + '\'' +
+                '}';
+    }
 }

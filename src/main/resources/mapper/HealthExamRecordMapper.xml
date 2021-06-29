@@ -6,10 +6,45 @@
         select * from VW_ZYB_TJZXX0
     </select>
     <select id="listExamConclusion" resultType="com.example.entity.ExamConclusion">
-        select * from vw_zyb_tjjl00
+        select  distinct
+            to_char(X.TJH000) TJH000,
+            SF_HM_GetTJZXX(31, x.TJH000) itam_Code  ,
+            SF_HM_GetTJZXX(19, x.TJH000) ITAM_NAME  ,
+            decode(X.ZYJLID,'2','01','4','02','3','04','5','03','6','05')  EXAM_CONCLUSION_CODE  ,
+            (case when X.ZYJLID=4  then T.Bzbh00  else ''  end)  yszyb_Code  ,
+            (case when X.ZYJLID=5  then T.Bzbh00  else ''  end)  zyjjz_Name  ,
+            (case when X.ZYJLID=3  then replace(replace(sf_hm_gettjjl(1,X.Tjh000),chr(13),''),chr(10),'')  else ''  end)   qtjb_Name ,
+            '01' jc_Type
+        from HM_YW_TJZYJL X
+                 left join HM_YW_TJWHYS Y on X.TJH000=Y.TJH000
+                 left join  pt_tyzd00 Z on Y.WHYSID=Z.Nbh000 and X.Whys00=Z.Mc0000
+                 left join  Hm_Yw_Tjtjjl W on X.TJH000=W.Tjh000
+                 left join  Hm_Zd_Tjjl00 T on W.JLID00=T.JLID00
+        where  Z.zdmc00='职业危害因素' and Z.lbbz00='0' and Z.Yxbz00=1
+          and X.ZYJLID not  in (4,5,6)
+        and x.TJH000 = #{tjh000}
     </select>
     <select id="listExamItemResult" resultType="com.example.entity.ExamItemResult">
-        select * from VW_ZYB_TJJCXM
+        select
+        b.tjh000,
+        (SELECT BMMC00 FROM PT_BMBM00 WHERE BMBH00=A.BMBH00) EXAM_ITEM_PNAME,
+        A.JCXMMC  EXAM_ITEM_NAME,
+        replace(replace((case when A.BMBH00=19 and c.bzbh00 is null then '4990000' when A.BMBH00 != 19 and c.bzbh00 is null then '2990000' else c.bzbh00  end ),chr(10),''),chr(13),'')  exam_Item_Code ,
+        (case when c.ZLX000='N' then '02'  when a.bmbh00='19'and c.ZLX000='C'  then '01' else '03' end ) exam_Result_Type  ,
+        replace(replace(replace(decode(A.JYJG00,null,trim(A.TZCMS0),A.JYJG00),' ',''),chr(10),''),chr(13),'') exam_Result  ,
+        A.JCXMDW  EXAM_ITEM_UNIT_CODE ,
+        ''  reference_Range_Min  ,
+        '' REFERENCE_RANGE_MAX  ,
+        (case when C.bzbh00='3080200' and D.Ksxj00 like '%尘肺样改变%' then '1'
+        when C.bzbh00='3080200' and D.Ksxj00 like '%双肺、心膈未见异常%' then '0'
+        when C.bzbh00='3080200' then '2'
+        else decode(A.ZZJB00,'1','TRUE','FALSE') end) abnormal
+
+        from HM_YW_TJJCXM A,hm_yw_tjz000 b,hm_yw_tjfkjc D,hm_zd_jcxm00 c
+        where
+        a.tjh000=b.tjh000  and a.jcxmid=c.jcxmid AND D.TJH000=B.TJH000 AND D.BMBH00=a.Bmbh00
+        and (A.TZCMS0 IS NOT NULL OR A.JYJG00 IS NOT NULL)
+        and a.tjh000 = #{tjh000}
     </select>
 
 </mapper>

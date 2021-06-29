@@ -1,0 +1,1476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--数据交换格式如下-->
+<DataExchange>
+    <!--头部开始-->
+    <Header>
+        <!--文档标识 ID-->
+        <DocumentId>机构编码-HEALTH_EXAM_RECORD-20210628131659989-15867</DocumentId>
+        <!--数据操作类型 Add,Update,Delete-->
+        <OperateType>Add</OperateType>
+        <!--业务活动标识 职业病系统-->
+        <BusinessActivityIdentification>NEWOMAR</BusinessActivityIdentification>
+        <!--上报机构代码-->
+        <ReportOrgCode>上报机构代码</ReportOrgCode>
+        <!--上报机构授权码-->
+        <License>上报机构授权码</License>
+        <!--上报地区代码-->
+        <ReportZoneCode>上报地区代码</ReportZoneCode>
+    </Header>
+    <!--头部结束-->
+    <!--主体开始-->
+    <EventBody>
+            <HEALTH_EXAM_RECORD_LIST>
+                    <!-- 可重复多个 -->
+                    <HEALTH_EXAM_RECORD ID="">
+                        <ENTERPRISE_INFO>
+                            <!--用人单位名称-->
+                            <ENTERPRISE_NAME>神火医院审核部</ENTERPRISE_NAME>
+                            <!--统一社会信用代码(18 位)-->
+                            <CREDIT_CODE></CREDIT_CODE>
+                            <!-- 企业类型代码-->
+                            <ECONOMIC_TYPE_CODE></ECONOMIC_TYPE_CODE>
+                            <!--行业类别代码-->
+                            <INDUSTRY_CATEGORY_CODE></INDUSTRY_CATEGORY_CODE>
+                            <!--企业规模代码-->
+                            <BUSINESS_SCALE_CODE></BUSINESS_SCALE_CODE>
+                            <!--所属地区代码-->
+                            <ADDRESS_CODE>asdf0</ADDRESS_CODE>
+                            <!--用人单位详细地址-->
+                            <ADDRESS_DETAIL>d我家0</ADDRESS_DETAIL>
+                            <!--用人单位地址邮政代码-->
+                            <ADDRESS_ZIP_CODE>77770</ADDRESS_ZIP_CODE>
+                            <!--用人单位联系人名称-->
+                            <ENTERPRISE_CONTACT></ENTERPRISE_CONTACT>
+                            <!--用人单位联系人电话-->
+                            <CONTACT_TELPHONE></CONTACT_TELPHONE>
+                            <!--用人单位所在区全名称(如:北京市市辖区海淀区)-->
+                            <ALL_NAME>全称0</ALL_NAME>
+                        </ENTERPRISE_INFO>
+                        <!--用工单位信息开始-->
+                        <ENTERPRISE_INFO_EMPLOYER>
+                            <!--用工单位名称-->
+                            <ENTERPRISE_NAME_EMPLOYER></ENTERPRISE_NAME_EMPLOYER>
+                            <!--用工单位统一社会信用代码(18 位)-->
+                            <CREDIT_CODE_EMPLOYER></CREDIT_CODE_EMPLOYER>
+                            <!-- 用工单位企业类型代码-->
+                            <ECONOMIC_TYPE_CODE_EMPLOYER></ECONOMIC_TYPE_CODE_EMPLOYER>
+                            <!--用工单位行业类别代码-->
+                            <INDUSTRY_CATEGORY_CODE_EMPLOYER></INDUSTRY_CATEGORY_CODE_EMPLOYER>
+                            <!--用工单位企业规模代码-->
+                            <BUSINESS_SCALE_CODE_EMPLOYER></BUSINESS_SCALE_CODE_EMPLOYER>
+                            <!--用工单位所属地区代码-->
+                            <ADDRESS_CODE_EMPLOYER>公司0</ADDRESS_CODE_EMPLOYER>
+                            <!--用工单位所在区全名称(如:北京市市辖区海淀区)-->
+                            <ALL_NAME_EMPLOYER></ALL_NAME_EMPLOYER>
+                        </ENTERPRISE_INFO_EMPLOYER>
+                        <!--用工单位信息结束-->
+                        <!--劳动者信息开始-->
+                        <WORKER_INFO>
+                            <!-- 姓名 -->
+                            <WORKER_NAME></WORKER_NAME>
+                            <!-- 身份证件类型代码 -->
+                            <ID_CARD_TYPE_CODE></ID_CARD_TYPE_CODE>
+                            <!-- 身份证件号码 -->
+                            <ID_CARD></ID_CARD>
+                            <!-- 性别代码-->
+                            <GENDER_CODE></GENDER_CODE>
+                            <!-- 出生日期-->
+                            <BIRTH_DATE></BIRTH_DATE>
+                            <!--联系电话-->
+                            <WORKER_TELPHONE></WORKER_TELPHONE>
+                        </WORKER_INFO>
+                        <!--劳动者信息结束-->
+                        <!--监测类型代码-->
+                        <JC_TYPE></JC_TYPE>
+                        <!--体检类型代码-->
+                        <EXAM_TYPE_CODE></EXAM_TYPE_CODE>
+                        <!--体检日期-->
+                        <EXAM_DATE></EXAM_DATE>
+                        <!--接触的职业病危害因素代码-->
+                        <CONTACT_FACTOR_CODE></CONTACT_FACTOR_CODE>
+                        <!--接触的其他职业病危害因素-->
+                        <CONTACT_FACTOR_OTHER></CONTACT_FACTOR_OTHER>
+                        <!-- 体检危害因素代码-->
+                        <FACTOR_CODE></FACTOR_CODE>
+                        <!--其他危害因素具体名称(如果危害因素选择其他，需要在这里填写具体的危害因素名称) -->
+                        <FACTOR_OTHER></FACTOR_OTHER>
+                        <!--工种代码-->
+                        <WORK_TYPE_CODE></WORK_TYPE_CODE>
+                        <!--其他工种名称(工种选择其他时，需要在这里保存具体工种的名字)-->
+                        <OTHER_WORK_TYPE></OTHER_WORK_TYPE>
+                        <!--是否复查(0 否、1 是)-->
+                        <IS_REVIEW></IS_REVIEW>
+                        <!--创建地区代码-->
+                        <AREA_CODE>hello world0</AREA_CODE>
+                        <!--创建机构代码-->
+                        <ORG_CODE></ORG_CODE>
+                        <!--体检结论信息开始-->
+                        <EXAM_CONCLUSION_LIST>
+                                    <!--每个危害因素对应一个结论，各类粉尘只需填写一个大类粉尘的结论即可 -->
+                                    <EXAM_CONCLUSION>
+                                        <!-- 职业病危害因素代码-->
+                                        <ITAM_CODE></ITAM_CODE>
+                                        <!--危害因素名称-->
+                                        <ITAM_NAME></ITAM_NAME>
+                                        <!-- 体检结论代码-->
+                                        <EXAM_CONCLUSION_CODE>123</EXAM_CONCLUSION_CODE>
+                                        <!--疑似职业病代码(见字典职业病类型，当体检结论位疑似职业病时，需填写该字段) -->
+                                        <YSZYB_CODE></YSZYB_CODE>
+                                        <!--职业禁忌证名称(当体检结论是职业禁忌症时，需填写该字段)-->
+                                        <ZYJJZ_NAME></ZYJJZ_NAME>
+                                        <!--其他疾病或异常描述(当体检结论是其他疾病或异常时，需填写该字段)-->
+                                        <QTJB_NAME>dra</QTJB_NAME>
+                                        <!--开始接害日期(当体检类型是上岗前时非必填;当体检的危害因素是混合接触时，开始接害日期和接害工龄要分别按危害因素填写，各类粉尘只需填写一次)-->
+                                        <HARM_START_DATE></HARM_START_DATE>
+                                        <!-- 实际接害工龄-年(同上)-->
+                                        <HARM_AGE_YEAR></HARM_AGE_YEAR>
+                                        <!--实际接害工龄-月(同上)-->
+                                        <HARM_AGE_MONTH>112</HARM_AGE_MONTH>
+                                    </EXAM_CONCLUSION>
+                                    <!--每个危害因素对应一个结论，各类粉尘只需填写一个大类粉尘的结论即可 -->
+                                    <EXAM_CONCLUSION>
+                                        <!-- 职业病危害因素代码-->
+                                        <ITAM_CODE></ITAM_CODE>
+                                        <!--危害因素名称-->
+                                        <ITAM_NAME></ITAM_NAME>
+                                        <!-- 体检结论代码-->
+                                        <EXAM_CONCLUSION_CODE>123</EXAM_CONCLUSION_CODE>
+                                        <!--疑似职业病代码(见字典职业病类型，当体检结论位疑似职业病时，需填写该字段) -->
+                                        <YSZYB_CODE></YSZYB_CODE>
+                                        <!--职业禁忌证名称(当体检结论是职业禁忌症时，需填写该字段)-->
+                                        <ZYJJZ_NAME></ZYJJZ_NAME>
+                                        <!--其他疾病或异常描述(当体检结论是其他疾病或异常时，需填写该字段)-->
+                                        <QTJB_NAME>dra</QTJB_NAME>
+                                        <!--开始接害日期(当体检类型是上岗前时非必填;当体检的危害因素是混合接触时，开始接害日期和接害工龄要分别按危害因素填写，各类粉尘只需填写一次)-->
+                                        <HARM_START_DATE></HARM_START_DATE>
+                                        <!-- 实际接害工龄-年(同上)-->
+                                        <HARM_AGE_YEAR></HARM_AGE_YEAR>
+                                        <!--实际接害工龄-月(同上)-->
+                                        <HARM_AGE_MONTH>112</HARM_AGE_MONTH>
+                                    </EXAM_CONCLUSION>
+                                    <!--每个危害因素对应一个结论，各类粉尘只需填写一个大类粉尘的结论即可 -->
+                                    <EXAM_CONCLUSION>
+                                        <!-- 职业病危害因素代码-->
+                                        <ITAM_CODE></ITAM_CODE>
+                                        <!--危害因素名称-->
+                                        <ITAM_NAME></ITAM_NAME>
+                                        <!-- 体检结论代码-->
+                                        <EXAM_CONCLUSION_CODE>123</EXAM_CONCLUSION_CODE>
+                                        <!--疑似职业病代码(见字典职业病类型，当体检结论位疑似职业病时，需填写该字段) -->
+                                        <YSZYB_CODE></YSZYB_CODE>
+                                        <!--职业禁忌证名称(当体检结论是职业禁忌症时，需填写该字段)-->
+                                        <ZYJJZ_NAME></ZYJJZ_NAME>
+                                        <!--其他疾病或异常描述(当体检结论是其他疾病或异常时，需填写该字段)-->
+                                        <QTJB_NAME>dra</QTJB_NAME>
+                                        <!--开始接害日期(当体检类型是上岗前时非必填;当体检的危害因素是混合接触时，开始接害日期和接害工龄要分别按危害因素填写，各类粉尘只需填写一次)-->
+                                        <HARM_START_DATE></HARM_START_DATE>
+                                        <!-- 实际接害工龄-年(同上)-->
+                                        <HARM_AGE_YEAR></HARM_AGE_YEAR>
+                                        <!--实际接害工龄-月(同上)-->
+                                        <HARM_AGE_MONTH>112</HARM_AGE_MONTH>
+                                    </EXAM_CONCLUSION>
+                                    <!--每个危害因素对应一个结论，各类粉尘只需填写一个大类粉尘的结论即可 -->
+                                    <EXAM_CONCLUSION>
+                                        <!-- 职业病危害因素代码-->
+                                        <ITAM_CODE></ITAM_CODE>
+                                        <!--危害因素名称-->
+                                        <ITAM_NAME></ITAM_NAME>
+                                        <!-- 体检结论代码-->
+                                        <EXAM_CONCLUSION_CODE>123</EXAM_CONCLUSION_CODE>
+                                        <!--疑似职业病代码(见字典职业病类型，当体检结论位疑似职业病时，需填写该字段) -->
+                                        <YSZYB_CODE></YSZYB_CODE>
+                                        <!--职业禁忌证名称(当体检结论是职业禁忌症时，需填写该字段)-->
+                                        <ZYJJZ_NAME></ZYJJZ_NAME>
+                                        <!--其他疾病或异常描述(当体检结论是其他疾病或异常时，需填写该字段)-->
+                                        <QTJB_NAME>dra</QTJB_NAME>
+                                        <!--开始接害日期(当体检类型是上岗前时非必填;当体检的危害因素是混合接触时，开始接害日期和接害工龄要分别按危害因素填写，各类粉尘只需填写一次)-->
+                                        <HARM_START_DATE></HARM_START_DATE>
+                                        <!-- 实际接害工龄-年(同上)-->
+                                        <HARM_AGE_YEAR></HARM_AGE_YEAR>
+                                        <!--实际接害工龄-月(同上)-->
+                                        <HARM_AGE_MONTH>112</HARM_AGE_MONTH>
+                                    </EXAM_CONCLUSION>
+                                    <!--每个危害因素对应一个结论，各类粉尘只需填写一个大类粉尘的结论即可 -->
+                                    <EXAM_CONCLUSION>
+                                        <!-- 职业病危害因素代码-->
+                                        <ITAM_CODE></ITAM_CODE>
+                                        <!--危害因素名称-->
+                                        <ITAM_NAME></ITAM_NAME>
+                                        <!-- 体检结论代码-->
+                                        <EXAM_CONCLUSION_CODE>123</EXAM_CONCLUSION_CODE>
+                                        <!--疑似职业病代码(见字典职业病类型，当体检结论位疑似职业病时，需填写该字段) -->
+                                        <YSZYB_CODE></YSZYB_CODE>
+                                        <!--职业禁忌证名称(当体检结论是职业禁忌症时，需填写该字段)-->
+                                        <ZYJJZ_NAME></ZYJJZ_NAME>
+                                        <!--其他疾病或异常描述(当体检结论是其他疾病或异常时，需填写该字段)-->
+                                        <QTJB_NAME>dra</QTJB_NAME>
+                                        <!--开始接害日期(当体检类型是上岗前时非必填;当体检的危害因素是混合接触时，开始接害日期和接害工龄要分别按危害因素填写，各类粉尘只需填写一次)-->
+                                        <HARM_START_DATE></HARM_START_DATE>
+                                        <!-- 实际接害工龄-年(同上)-->
+                                        <HARM_AGE_YEAR></HARM_AGE_YEAR>
+                                        <!--实际接害工龄-月(同上)-->
+                                        <HARM_AGE_MONTH>112</HARM_AGE_MONTH>
+                                    </EXAM_CONCLUSION>
+                        </EXAM_CONCLUSION_LIST>
+                        <!--体检结论信息结束-->
+                        <!--检查项目信息开始-->
+                        <EXAM_ITEM_RESULT_LIST>
+                                    <EXAM_ITEM_RESULT>
+                                        <!--检查项目父级名称(检查指标名称一级节点名称)-->
+                                        <EXAM_ITEM_PNAME></EXAM_ITEM_PNAME>
+                                        <!--检查项目名称-->
+                                        <EXAM_ITEM_NAME>hel0</EXAM_ITEM_NAME>
+                                        <!--检查项目代码-->
+                                        <EXAM_ITEM_CODE>1df990</EXAM_ITEM_CODE>
+                                        <!--检查结果类型代码-->
+                                        <EXAM_RESULT_TYPE></EXAM_RESULT_TYPE>
+                                        <!--检查结果-->
+                                        <EXAM_RESULT></EXAM_RESULT>
+                                        <!--检查项目计量单位及参考值范围(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <EXAM_ITEM_UNIT_CODE>个</EXAM_ITEM_UNIT_CODE>
+                                        <!--参考值范围小值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MIN></REFERENCE_RANGE_MIN>
+                                        <!--参考值范围大值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MAX></REFERENCE_RANGE_MAX>
+                                        <!--是否异常(0 正常、1 异常、3 未检查;当检查项目是胸片时，见胸片检查结果代码表)-->
+                                        <ABNORMAL>1</ABNORMAL>
+                                    </EXAM_ITEM_RESULT>
+                                    <EXAM_ITEM_RESULT>
+                                        <!--检查项目父级名称(检查指标名称一级节点名称)-->
+                                        <EXAM_ITEM_PNAME></EXAM_ITEM_PNAME>
+                                        <!--检查项目名称-->
+                                        <EXAM_ITEM_NAME>hel1</EXAM_ITEM_NAME>
+                                        <!--检查项目代码-->
+                                        <EXAM_ITEM_CODE>1df991</EXAM_ITEM_CODE>
+                                        <!--检查结果类型代码-->
+                                        <EXAM_RESULT_TYPE></EXAM_RESULT_TYPE>
+                                        <!--检查结果-->
+                                        <EXAM_RESULT></EXAM_RESULT>
+                                        <!--检查项目计量单位及参考值范围(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <EXAM_ITEM_UNIT_CODE>个</EXAM_ITEM_UNIT_CODE>
+                                        <!--参考值范围小值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MIN></REFERENCE_RANGE_MIN>
+                                        <!--参考值范围大值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MAX></REFERENCE_RANGE_MAX>
+                                        <!--是否异常(0 正常、1 异常、3 未检查;当检查项目是胸片时，见胸片检查结果代码表)-->
+                                        <ABNORMAL>1</ABNORMAL>
+                                    </EXAM_ITEM_RESULT>
+                                    <EXAM_ITEM_RESULT>
+                                        <!--检查项目父级名称(检查指标名称一级节点名称)-->
+                                        <EXAM_ITEM_PNAME></EXAM_ITEM_PNAME>
+                                        <!--检查项目名称-->
+                                        <EXAM_ITEM_NAME>hel2</EXAM_ITEM_NAME>
+                                        <!--检查项目代码-->
+                                        <EXAM_ITEM_CODE>1df992</EXAM_ITEM_CODE>
+                                        <!--检查结果类型代码-->
+                                        <EXAM_RESULT_TYPE></EXAM_RESULT_TYPE>
+                                        <!--检查结果-->
+                                        <EXAM_RESULT></EXAM_RESULT>
+                                        <!--检查项目计量单位及参考值范围(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <EXAM_ITEM_UNIT_CODE>个</EXAM_ITEM_UNIT_CODE>
+                                        <!--参考值范围小值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MIN></REFERENCE_RANGE_MIN>
+                                        <!--参考值范围大值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MAX></REFERENCE_RANGE_MAX>
+                                        <!--是否异常(0 正常、1 异常、3 未检查;当检查项目是胸片时，见胸片检查结果代码表)-->
+                                        <ABNORMAL>1</ABNORMAL>
+                                    </EXAM_ITEM_RESULT>
+                        </EXAM_ITEM_RESULT_LIST>
+                        <!--检查项目信息结束-->
+                        <!--填表人姓名-->
+                        <WRITE_PERSON></WRITE_PERSON>
+                        <!--填表人电话-->
+                        <WRITE_PERSON_TELPHONE></WRITE_PERSON_TELPHONE>
+                        <!-- 报告出具日期-->
+                        <WRITE_DATE></WRITE_DATE>
+                        <!-- 检查单位名称-->
+                        <REPORT_ORGAN_CREDIT_CODE></REPORT_ORGAN_CREDIT_CODE>
+                        <!--报告人姓名-->
+                        <REPORT_PERSON></REPORT_PERSON>
+                        <!--报告人联系电话-->
+                        <REPORT_PERSON_TEL></REPORT_PERSON_TEL>
+                        <!--报告日期-->
+                        <REPORT_DATE></REPORT_DATE>
+                        <!--报告单位名称-->
+                        <REPORT_UNIT></REPORT_UNIT>
+                        <!--备注-->
+                        <REMARK></REMARK>
+                        <!-- 审核信息开始 -->
+                        <AUDIT_INFO>
+                            <!-- 审核状态代码(必填 07 省级审核通过)-->
+                            <AUDITSTATUS></AUDITSTATUS>
+                            <!-- 审核意见 -->
+                            <AUDITINFO></AUDITINFO>
+                            <!-- 审核时间 -->
+                            <AUDITDATE></AUDITDATE>
+                            <!-- 审核人姓名 -->
+                            <AUDITOR_NAME>审计人0</AUDITOR_NAME>
+                            <!-- 审核机构 -->
+                            <AUDIT_ORG></AUDIT_ORG>
+                        </AUDIT_INFO>
+                        <!-- 审核信息结束 -->
+                    </HEALTH_EXAM_RECORD>
+                    <!-- 可重复多个 -->
+                    <HEALTH_EXAM_RECORD ID="">
+                        <ENTERPRISE_INFO>
+                            <!--用人单位名称-->
+                            <ENTERPRISE_NAME>神火医院审核部</ENTERPRISE_NAME>
+                            <!--统一社会信用代码(18 位)-->
+                            <CREDIT_CODE></CREDIT_CODE>
+                            <!-- 企业类型代码-->
+                            <ECONOMIC_TYPE_CODE></ECONOMIC_TYPE_CODE>
+                            <!--行业类别代码-->
+                            <INDUSTRY_CATEGORY_CODE></INDUSTRY_CATEGORY_CODE>
+                            <!--企业规模代码-->
+                            <BUSINESS_SCALE_CODE></BUSINESS_SCALE_CODE>
+                            <!--所属地区代码-->
+                            <ADDRESS_CODE>asdf1</ADDRESS_CODE>
+                            <!--用人单位详细地址-->
+                            <ADDRESS_DETAIL>d我家1</ADDRESS_DETAIL>
+                            <!--用人单位地址邮政代码-->
+                            <ADDRESS_ZIP_CODE>77771</ADDRESS_ZIP_CODE>
+                            <!--用人单位联系人名称-->
+                            <ENTERPRISE_CONTACT></ENTERPRISE_CONTACT>
+                            <!--用人单位联系人电话-->
+                            <CONTACT_TELPHONE></CONTACT_TELPHONE>
+                            <!--用人单位所在区全名称(如:北京市市辖区海淀区)-->
+                            <ALL_NAME>全称1</ALL_NAME>
+                        </ENTERPRISE_INFO>
+                        <!--用工单位信息开始-->
+                        <ENTERPRISE_INFO_EMPLOYER>
+                            <!--用工单位名称-->
+                            <ENTERPRISE_NAME_EMPLOYER></ENTERPRISE_NAME_EMPLOYER>
+                            <!--用工单位统一社会信用代码(18 位)-->
+                            <CREDIT_CODE_EMPLOYER></CREDIT_CODE_EMPLOYER>
+                            <!-- 用工单位企业类型代码-->
+                            <ECONOMIC_TYPE_CODE_EMPLOYER></ECONOMIC_TYPE_CODE_EMPLOYER>
+                            <!--用工单位行业类别代码-->
+                            <INDUSTRY_CATEGORY_CODE_EMPLOYER></INDUSTRY_CATEGORY_CODE_EMPLOYER>
+                            <!--用工单位企业规模代码-->
+                            <BUSINESS_SCALE_CODE_EMPLOYER></BUSINESS_SCALE_CODE_EMPLOYER>
+                            <!--用工单位所属地区代码-->
+                            <ADDRESS_CODE_EMPLOYER>公司1</ADDRESS_CODE_EMPLOYER>
+                            <!--用工单位所在区全名称(如:北京市市辖区海淀区)-->
+                            <ALL_NAME_EMPLOYER></ALL_NAME_EMPLOYER>
+                        </ENTERPRISE_INFO_EMPLOYER>
+                        <!--用工单位信息结束-->
+                        <!--劳动者信息开始-->
+                        <WORKER_INFO>
+                            <!-- 姓名 -->
+                            <WORKER_NAME></WORKER_NAME>
+                            <!-- 身份证件类型代码 -->
+                            <ID_CARD_TYPE_CODE></ID_CARD_TYPE_CODE>
+                            <!-- 身份证件号码 -->
+                            <ID_CARD></ID_CARD>
+                            <!-- 性别代码-->
+                            <GENDER_CODE></GENDER_CODE>
+                            <!-- 出生日期-->
+                            <BIRTH_DATE></BIRTH_DATE>
+                            <!--联系电话-->
+                            <WORKER_TELPHONE></WORKER_TELPHONE>
+                        </WORKER_INFO>
+                        <!--劳动者信息结束-->
+                        <!--监测类型代码-->
+                        <JC_TYPE></JC_TYPE>
+                        <!--体检类型代码-->
+                        <EXAM_TYPE_CODE></EXAM_TYPE_CODE>
+                        <!--体检日期-->
+                        <EXAM_DATE></EXAM_DATE>
+                        <!--接触的职业病危害因素代码-->
+                        <CONTACT_FACTOR_CODE></CONTACT_FACTOR_CODE>
+                        <!--接触的其他职业病危害因素-->
+                        <CONTACT_FACTOR_OTHER></CONTACT_FACTOR_OTHER>
+                        <!-- 体检危害因素代码-->
+                        <FACTOR_CODE></FACTOR_CODE>
+                        <!--其他危害因素具体名称(如果危害因素选择其他，需要在这里填写具体的危害因素名称) -->
+                        <FACTOR_OTHER></FACTOR_OTHER>
+                        <!--工种代码-->
+                        <WORK_TYPE_CODE></WORK_TYPE_CODE>
+                        <!--其他工种名称(工种选择其他时，需要在这里保存具体工种的名字)-->
+                        <OTHER_WORK_TYPE></OTHER_WORK_TYPE>
+                        <!--是否复查(0 否、1 是)-->
+                        <IS_REVIEW></IS_REVIEW>
+                        <!--创建地区代码-->
+                        <AREA_CODE>hello world1</AREA_CODE>
+                        <!--创建机构代码-->
+                        <ORG_CODE></ORG_CODE>
+                        <!--体检结论信息开始-->
+                        <EXAM_CONCLUSION_LIST>
+                                    <!--每个危害因素对应一个结论，各类粉尘只需填写一个大类粉尘的结论即可 -->
+                                    <EXAM_CONCLUSION>
+                                        <!-- 职业病危害因素代码-->
+                                        <ITAM_CODE></ITAM_CODE>
+                                        <!--危害因素名称-->
+                                        <ITAM_NAME></ITAM_NAME>
+                                        <!-- 体检结论代码-->
+                                        <EXAM_CONCLUSION_CODE>123</EXAM_CONCLUSION_CODE>
+                                        <!--疑似职业病代码(见字典职业病类型，当体检结论位疑似职业病时，需填写该字段) -->
+                                        <YSZYB_CODE></YSZYB_CODE>
+                                        <!--职业禁忌证名称(当体检结论是职业禁忌症时，需填写该字段)-->
+                                        <ZYJJZ_NAME></ZYJJZ_NAME>
+                                        <!--其他疾病或异常描述(当体检结论是其他疾病或异常时，需填写该字段)-->
+                                        <QTJB_NAME>dra</QTJB_NAME>
+                                        <!--开始接害日期(当体检类型是上岗前时非必填;当体检的危害因素是混合接触时，开始接害日期和接害工龄要分别按危害因素填写，各类粉尘只需填写一次)-->
+                                        <HARM_START_DATE></HARM_START_DATE>
+                                        <!-- 实际接害工龄-年(同上)-->
+                                        <HARM_AGE_YEAR></HARM_AGE_YEAR>
+                                        <!--实际接害工龄-月(同上)-->
+                                        <HARM_AGE_MONTH>112</HARM_AGE_MONTH>
+                                    </EXAM_CONCLUSION>
+                                    <!--每个危害因素对应一个结论，各类粉尘只需填写一个大类粉尘的结论即可 -->
+                                    <EXAM_CONCLUSION>
+                                        <!-- 职业病危害因素代码-->
+                                        <ITAM_CODE></ITAM_CODE>
+                                        <!--危害因素名称-->
+                                        <ITAM_NAME></ITAM_NAME>
+                                        <!-- 体检结论代码-->
+                                        <EXAM_CONCLUSION_CODE>123</EXAM_CONCLUSION_CODE>
+                                        <!--疑似职业病代码(见字典职业病类型，当体检结论位疑似职业病时，需填写该字段) -->
+                                        <YSZYB_CODE></YSZYB_CODE>
+                                        <!--职业禁忌证名称(当体检结论是职业禁忌症时，需填写该字段)-->
+                                        <ZYJJZ_NAME></ZYJJZ_NAME>
+                                        <!--其他疾病或异常描述(当体检结论是其他疾病或异常时，需填写该字段)-->
+                                        <QTJB_NAME>dra</QTJB_NAME>
+                                        <!--开始接害日期(当体检类型是上岗前时非必填;当体检的危害因素是混合接触时，开始接害日期和接害工龄要分别按危害因素填写，各类粉尘只需填写一次)-->
+                                        <HARM_START_DATE></HARM_START_DATE>
+                                        <!-- 实际接害工龄-年(同上)-->
+                                        <HARM_AGE_YEAR></HARM_AGE_YEAR>
+                                        <!--实际接害工龄-月(同上)-->
+                                        <HARM_AGE_MONTH>112</HARM_AGE_MONTH>
+                                    </EXAM_CONCLUSION>
+                                    <!--每个危害因素对应一个结论，各类粉尘只需填写一个大类粉尘的结论即可 -->
+                                    <EXAM_CONCLUSION>
+                                        <!-- 职业病危害因素代码-->
+                                        <ITAM_CODE></ITAM_CODE>
+                                        <!--危害因素名称-->
+                                        <ITAM_NAME></ITAM_NAME>
+                                        <!-- 体检结论代码-->
+                                        <EXAM_CONCLUSION_CODE>123</EXAM_CONCLUSION_CODE>
+                                        <!--疑似职业病代码(见字典职业病类型，当体检结论位疑似职业病时，需填写该字段) -->
+                                        <YSZYB_CODE></YSZYB_CODE>
+                                        <!--职业禁忌证名称(当体检结论是职业禁忌症时，需填写该字段)-->
+                                        <ZYJJZ_NAME></ZYJJZ_NAME>
+                                        <!--其他疾病或异常描述(当体检结论是其他疾病或异常时，需填写该字段)-->
+                                        <QTJB_NAME>dra</QTJB_NAME>
+                                        <!--开始接害日期(当体检类型是上岗前时非必填;当体检的危害因素是混合接触时，开始接害日期和接害工龄要分别按危害因素填写，各类粉尘只需填写一次)-->
+                                        <HARM_START_DATE></HARM_START_DATE>
+                                        <!-- 实际接害工龄-年(同上)-->
+                                        <HARM_AGE_YEAR></HARM_AGE_YEAR>
+                                        <!--实际接害工龄-月(同上)-->
+                                        <HARM_AGE_MONTH>112</HARM_AGE_MONTH>
+                                    </EXAM_CONCLUSION>
+                                    <!--每个危害因素对应一个结论，各类粉尘只需填写一个大类粉尘的结论即可 -->
+                                    <EXAM_CONCLUSION>
+                                        <!-- 职业病危害因素代码-->
+                                        <ITAM_CODE></ITAM_CODE>
+                                        <!--危害因素名称-->
+                                        <ITAM_NAME></ITAM_NAME>
+                                        <!-- 体检结论代码-->
+                                        <EXAM_CONCLUSION_CODE>123</EXAM_CONCLUSION_CODE>
+                                        <!--疑似职业病代码(见字典职业病类型，当体检结论位疑似职业病时，需填写该字段) -->
+                                        <YSZYB_CODE></YSZYB_CODE>
+                                        <!--职业禁忌证名称(当体检结论是职业禁忌症时，需填写该字段)-->
+                                        <ZYJJZ_NAME></ZYJJZ_NAME>
+                                        <!--其他疾病或异常描述(当体检结论是其他疾病或异常时，需填写该字段)-->
+                                        <QTJB_NAME>dra</QTJB_NAME>
+                                        <!--开始接害日期(当体检类型是上岗前时非必填;当体检的危害因素是混合接触时，开始接害日期和接害工龄要分别按危害因素填写，各类粉尘只需填写一次)-->
+                                        <HARM_START_DATE></HARM_START_DATE>
+                                        <!-- 实际接害工龄-年(同上)-->
+                                        <HARM_AGE_YEAR></HARM_AGE_YEAR>
+                                        <!--实际接害工龄-月(同上)-->
+                                        <HARM_AGE_MONTH>112</HARM_AGE_MONTH>
+                                    </EXAM_CONCLUSION>
+                                    <!--每个危害因素对应一个结论，各类粉尘只需填写一个大类粉尘的结论即可 -->
+                                    <EXAM_CONCLUSION>
+                                        <!-- 职业病危害因素代码-->
+                                        <ITAM_CODE></ITAM_CODE>
+                                        <!--危害因素名称-->
+                                        <ITAM_NAME></ITAM_NAME>
+                                        <!-- 体检结论代码-->
+                                        <EXAM_CONCLUSION_CODE>123</EXAM_CONCLUSION_CODE>
+                                        <!--疑似职业病代码(见字典职业病类型，当体检结论位疑似职业病时，需填写该字段) -->
+                                        <YSZYB_CODE></YSZYB_CODE>
+                                        <!--职业禁忌证名称(当体检结论是职业禁忌症时，需填写该字段)-->
+                                        <ZYJJZ_NAME></ZYJJZ_NAME>
+                                        <!--其他疾病或异常描述(当体检结论是其他疾病或异常时，需填写该字段)-->
+                                        <QTJB_NAME>dra</QTJB_NAME>
+                                        <!--开始接害日期(当体检类型是上岗前时非必填;当体检的危害因素是混合接触时，开始接害日期和接害工龄要分别按危害因素填写，各类粉尘只需填写一次)-->
+                                        <HARM_START_DATE></HARM_START_DATE>
+                                        <!-- 实际接害工龄-年(同上)-->
+                                        <HARM_AGE_YEAR></HARM_AGE_YEAR>
+                                        <!--实际接害工龄-月(同上)-->
+                                        <HARM_AGE_MONTH>112</HARM_AGE_MONTH>
+                                    </EXAM_CONCLUSION>
+                        </EXAM_CONCLUSION_LIST>
+                        <!--体检结论信息结束-->
+                        <!--检查项目信息开始-->
+                        <EXAM_ITEM_RESULT_LIST>
+                                    <EXAM_ITEM_RESULT>
+                                        <!--检查项目父级名称(检查指标名称一级节点名称)-->
+                                        <EXAM_ITEM_PNAME></EXAM_ITEM_PNAME>
+                                        <!--检查项目名称-->
+                                        <EXAM_ITEM_NAME>hel0</EXAM_ITEM_NAME>
+                                        <!--检查项目代码-->
+                                        <EXAM_ITEM_CODE>1df990</EXAM_ITEM_CODE>
+                                        <!--检查结果类型代码-->
+                                        <EXAM_RESULT_TYPE></EXAM_RESULT_TYPE>
+                                        <!--检查结果-->
+                                        <EXAM_RESULT></EXAM_RESULT>
+                                        <!--检查项目计量单位及参考值范围(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <EXAM_ITEM_UNIT_CODE>个</EXAM_ITEM_UNIT_CODE>
+                                        <!--参考值范围小值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MIN></REFERENCE_RANGE_MIN>
+                                        <!--参考值范围大值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MAX></REFERENCE_RANGE_MAX>
+                                        <!--是否异常(0 正常、1 异常、3 未检查;当检查项目是胸片时，见胸片检查结果代码表)-->
+                                        <ABNORMAL>1</ABNORMAL>
+                                    </EXAM_ITEM_RESULT>
+                                    <EXAM_ITEM_RESULT>
+                                        <!--检查项目父级名称(检查指标名称一级节点名称)-->
+                                        <EXAM_ITEM_PNAME></EXAM_ITEM_PNAME>
+                                        <!--检查项目名称-->
+                                        <EXAM_ITEM_NAME>hel1</EXAM_ITEM_NAME>
+                                        <!--检查项目代码-->
+                                        <EXAM_ITEM_CODE>1df991</EXAM_ITEM_CODE>
+                                        <!--检查结果类型代码-->
+                                        <EXAM_RESULT_TYPE></EXAM_RESULT_TYPE>
+                                        <!--检查结果-->
+                                        <EXAM_RESULT></EXAM_RESULT>
+                                        <!--检查项目计量单位及参考值范围(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <EXAM_ITEM_UNIT_CODE>个</EXAM_ITEM_UNIT_CODE>
+                                        <!--参考值范围小值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MIN></REFERENCE_RANGE_MIN>
+                                        <!--参考值范围大值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MAX></REFERENCE_RANGE_MAX>
+                                        <!--是否异常(0 正常、1 异常、3 未检查;当检查项目是胸片时，见胸片检查结果代码表)-->
+                                        <ABNORMAL>1</ABNORMAL>
+                                    </EXAM_ITEM_RESULT>
+                                    <EXAM_ITEM_RESULT>
+                                        <!--检查项目父级名称(检查指标名称一级节点名称)-->
+                                        <EXAM_ITEM_PNAME></EXAM_ITEM_PNAME>
+                                        <!--检查项目名称-->
+                                        <EXAM_ITEM_NAME>hel2</EXAM_ITEM_NAME>
+                                        <!--检查项目代码-->
+                                        <EXAM_ITEM_CODE>1df992</EXAM_ITEM_CODE>
+                                        <!--检查结果类型代码-->
+                                        <EXAM_RESULT_TYPE></EXAM_RESULT_TYPE>
+                                        <!--检查结果-->
+                                        <EXAM_RESULT></EXAM_RESULT>
+                                        <!--检查项目计量单位及参考值范围(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <EXAM_ITEM_UNIT_CODE>个</EXAM_ITEM_UNIT_CODE>
+                                        <!--参考值范围小值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MIN></REFERENCE_RANGE_MIN>
+                                        <!--参考值范围大值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MAX></REFERENCE_RANGE_MAX>
+                                        <!--是否异常(0 正常、1 异常、3 未检查;当检查项目是胸片时，见胸片检查结果代码表)-->
+                                        <ABNORMAL>1</ABNORMAL>
+                                    </EXAM_ITEM_RESULT>
+                        </EXAM_ITEM_RESULT_LIST>
+                        <!--检查项目信息结束-->
+                        <!--填表人姓名-->
+                        <WRITE_PERSON></WRITE_PERSON>
+                        <!--填表人电话-->
+                        <WRITE_PERSON_TELPHONE></WRITE_PERSON_TELPHONE>
+                        <!-- 报告出具日期-->
+                        <WRITE_DATE></WRITE_DATE>
+                        <!-- 检查单位名称-->
+                        <REPORT_ORGAN_CREDIT_CODE></REPORT_ORGAN_CREDIT_CODE>
+                        <!--报告人姓名-->
+                        <REPORT_PERSON></REPORT_PERSON>
+                        <!--报告人联系电话-->
+                        <REPORT_PERSON_TEL></REPORT_PERSON_TEL>
+                        <!--报告日期-->
+                        <REPORT_DATE></REPORT_DATE>
+                        <!--报告单位名称-->
+                        <REPORT_UNIT></REPORT_UNIT>
+                        <!--备注-->
+                        <REMARK></REMARK>
+                        <!-- 审核信息开始 -->
+                        <AUDIT_INFO>
+                            <!-- 审核状态代码(必填 07 省级审核通过)-->
+                            <AUDITSTATUS></AUDITSTATUS>
+                            <!-- 审核意见 -->
+                            <AUDITINFO></AUDITINFO>
+                            <!-- 审核时间 -->
+                            <AUDITDATE></AUDITDATE>
+                            <!-- 审核人姓名 -->
+                            <AUDITOR_NAME>审计人1</AUDITOR_NAME>
+                            <!-- 审核机构 -->
+                            <AUDIT_ORG></AUDIT_ORG>
+                        </AUDIT_INFO>
+                        <!-- 审核信息结束 -->
+                    </HEALTH_EXAM_RECORD>
+                    <!-- 可重复多个 -->
+                    <HEALTH_EXAM_RECORD ID="">
+                        <ENTERPRISE_INFO>
+                            <!--用人单位名称-->
+                            <ENTERPRISE_NAME>神火医院审核部</ENTERPRISE_NAME>
+                            <!--统一社会信用代码(18 位)-->
+                            <CREDIT_CODE></CREDIT_CODE>
+                            <!-- 企业类型代码-->
+                            <ECONOMIC_TYPE_CODE></ECONOMIC_TYPE_CODE>
+                            <!--行业类别代码-->
+                            <INDUSTRY_CATEGORY_CODE></INDUSTRY_CATEGORY_CODE>
+                            <!--企业规模代码-->
+                            <BUSINESS_SCALE_CODE></BUSINESS_SCALE_CODE>
+                            <!--所属地区代码-->
+                            <ADDRESS_CODE>asdf2</ADDRESS_CODE>
+                            <!--用人单位详细地址-->
+                            <ADDRESS_DETAIL>d我家2</ADDRESS_DETAIL>
+                            <!--用人单位地址邮政代码-->
+                            <ADDRESS_ZIP_CODE>77772</ADDRESS_ZIP_CODE>
+                            <!--用人单位联系人名称-->
+                            <ENTERPRISE_CONTACT></ENTERPRISE_CONTACT>
+                            <!--用人单位联系人电话-->
+                            <CONTACT_TELPHONE></CONTACT_TELPHONE>
+                            <!--用人单位所在区全名称(如:北京市市辖区海淀区)-->
+                            <ALL_NAME>全称2</ALL_NAME>
+                        </ENTERPRISE_INFO>
+                        <!--用工单位信息开始-->
+                        <ENTERPRISE_INFO_EMPLOYER>
+                            <!--用工单位名称-->
+                            <ENTERPRISE_NAME_EMPLOYER></ENTERPRISE_NAME_EMPLOYER>
+                            <!--用工单位统一社会信用代码(18 位)-->
+                            <CREDIT_CODE_EMPLOYER></CREDIT_CODE_EMPLOYER>
+                            <!-- 用工单位企业类型代码-->
+                            <ECONOMIC_TYPE_CODE_EMPLOYER></ECONOMIC_TYPE_CODE_EMPLOYER>
+                            <!--用工单位行业类别代码-->
+                            <INDUSTRY_CATEGORY_CODE_EMPLOYER></INDUSTRY_CATEGORY_CODE_EMPLOYER>
+                            <!--用工单位企业规模代码-->
+                            <BUSINESS_SCALE_CODE_EMPLOYER></BUSINESS_SCALE_CODE_EMPLOYER>
+                            <!--用工单位所属地区代码-->
+                            <ADDRESS_CODE_EMPLOYER>公司2</ADDRESS_CODE_EMPLOYER>
+                            <!--用工单位所在区全名称(如:北京市市辖区海淀区)-->
+                            <ALL_NAME_EMPLOYER></ALL_NAME_EMPLOYER>
+                        </ENTERPRISE_INFO_EMPLOYER>
+                        <!--用工单位信息结束-->
+                        <!--劳动者信息开始-->
+                        <WORKER_INFO>
+                            <!-- 姓名 -->
+                            <WORKER_NAME></WORKER_NAME>
+                            <!-- 身份证件类型代码 -->
+                            <ID_CARD_TYPE_CODE></ID_CARD_TYPE_CODE>
+                            <!-- 身份证件号码 -->
+                            <ID_CARD></ID_CARD>
+                            <!-- 性别代码-->
+                            <GENDER_CODE></GENDER_CODE>
+                            <!-- 出生日期-->
+                            <BIRTH_DATE></BIRTH_DATE>
+                            <!--联系电话-->
+                            <WORKER_TELPHONE></WORKER_TELPHONE>
+                        </WORKER_INFO>
+                        <!--劳动者信息结束-->
+                        <!--监测类型代码-->
+                        <JC_TYPE></JC_TYPE>
+                        <!--体检类型代码-->
+                        <EXAM_TYPE_CODE></EXAM_TYPE_CODE>
+                        <!--体检日期-->
+                        <EXAM_DATE></EXAM_DATE>
+                        <!--接触的职业病危害因素代码-->
+                        <CONTACT_FACTOR_CODE></CONTACT_FACTOR_CODE>
+                        <!--接触的其他职业病危害因素-->
+                        <CONTACT_FACTOR_OTHER></CONTACT_FACTOR_OTHER>
+                        <!-- 体检危害因素代码-->
+                        <FACTOR_CODE></FACTOR_CODE>
+                        <!--其他危害因素具体名称(如果危害因素选择其他，需要在这里填写具体的危害因素名称) -->
+                        <FACTOR_OTHER></FACTOR_OTHER>
+                        <!--工种代码-->
+                        <WORK_TYPE_CODE></WORK_TYPE_CODE>
+                        <!--其他工种名称(工种选择其他时，需要在这里保存具体工种的名字)-->
+                        <OTHER_WORK_TYPE></OTHER_WORK_TYPE>
+                        <!--是否复查(0 否、1 是)-->
+                        <IS_REVIEW></IS_REVIEW>
+                        <!--创建地区代码-->
+                        <AREA_CODE>hello world2</AREA_CODE>
+                        <!--创建机构代码-->
+                        <ORG_CODE></ORG_CODE>
+                        <!--体检结论信息开始-->
+                        <EXAM_CONCLUSION_LIST>
+                                    <!--每个危害因素对应一个结论，各类粉尘只需填写一个大类粉尘的结论即可 -->
+                                    <EXAM_CONCLUSION>
+                                        <!-- 职业病危害因素代码-->
+                                        <ITAM_CODE></ITAM_CODE>
+                                        <!--危害因素名称-->
+                                        <ITAM_NAME></ITAM_NAME>
+                                        <!-- 体检结论代码-->
+                                        <EXAM_CONCLUSION_CODE>123</EXAM_CONCLUSION_CODE>
+                                        <!--疑似职业病代码(见字典职业病类型，当体检结论位疑似职业病时，需填写该字段) -->
+                                        <YSZYB_CODE></YSZYB_CODE>
+                                        <!--职业禁忌证名称(当体检结论是职业禁忌症时，需填写该字段)-->
+                                        <ZYJJZ_NAME></ZYJJZ_NAME>
+                                        <!--其他疾病或异常描述(当体检结论是其他疾病或异常时，需填写该字段)-->
+                                        <QTJB_NAME>dra</QTJB_NAME>
+                                        <!--开始接害日期(当体检类型是上岗前时非必填;当体检的危害因素是混合接触时，开始接害日期和接害工龄要分别按危害因素填写，各类粉尘只需填写一次)-->
+                                        <HARM_START_DATE></HARM_START_DATE>
+                                        <!-- 实际接害工龄-年(同上)-->
+                                        <HARM_AGE_YEAR></HARM_AGE_YEAR>
+                                        <!--实际接害工龄-月(同上)-->
+                                        <HARM_AGE_MONTH>112</HARM_AGE_MONTH>
+                                    </EXAM_CONCLUSION>
+                                    <!--每个危害因素对应一个结论，各类粉尘只需填写一个大类粉尘的结论即可 -->
+                                    <EXAM_CONCLUSION>
+                                        <!-- 职业病危害因素代码-->
+                                        <ITAM_CODE></ITAM_CODE>
+                                        <!--危害因素名称-->
+                                        <ITAM_NAME></ITAM_NAME>
+                                        <!-- 体检结论代码-->
+                                        <EXAM_CONCLUSION_CODE>123</EXAM_CONCLUSION_CODE>
+                                        <!--疑似职业病代码(见字典职业病类型，当体检结论位疑似职业病时，需填写该字段) -->
+                                        <YSZYB_CODE></YSZYB_CODE>
+                                        <!--职业禁忌证名称(当体检结论是职业禁忌症时，需填写该字段)-->
+                                        <ZYJJZ_NAME></ZYJJZ_NAME>
+                                        <!--其他疾病或异常描述(当体检结论是其他疾病或异常时，需填写该字段)-->
+                                        <QTJB_NAME>dra</QTJB_NAME>
+                                        <!--开始接害日期(当体检类型是上岗前时非必填;当体检的危害因素是混合接触时，开始接害日期和接害工龄要分别按危害因素填写，各类粉尘只需填写一次)-->
+                                        <HARM_START_DATE></HARM_START_DATE>
+                                        <!-- 实际接害工龄-年(同上)-->
+                                        <HARM_AGE_YEAR></HARM_AGE_YEAR>
+                                        <!--实际接害工龄-月(同上)-->
+                                        <HARM_AGE_MONTH>112</HARM_AGE_MONTH>
+                                    </EXAM_CONCLUSION>
+                                    <!--每个危害因素对应一个结论，各类粉尘只需填写一个大类粉尘的结论即可 -->
+                                    <EXAM_CONCLUSION>
+                                        <!-- 职业病危害因素代码-->
+                                        <ITAM_CODE></ITAM_CODE>
+                                        <!--危害因素名称-->
+                                        <ITAM_NAME></ITAM_NAME>
+                                        <!-- 体检结论代码-->
+                                        <EXAM_CONCLUSION_CODE>123</EXAM_CONCLUSION_CODE>
+                                        <!--疑似职业病代码(见字典职业病类型，当体检结论位疑似职业病时，需填写该字段) -->
+                                        <YSZYB_CODE></YSZYB_CODE>
+                                        <!--职业禁忌证名称(当体检结论是职业禁忌症时，需填写该字段)-->
+                                        <ZYJJZ_NAME></ZYJJZ_NAME>
+                                        <!--其他疾病或异常描述(当体检结论是其他疾病或异常时，需填写该字段)-->
+                                        <QTJB_NAME>dra</QTJB_NAME>
+                                        <!--开始接害日期(当体检类型是上岗前时非必填;当体检的危害因素是混合接触时，开始接害日期和接害工龄要分别按危害因素填写，各类粉尘只需填写一次)-->
+                                        <HARM_START_DATE></HARM_START_DATE>
+                                        <!-- 实际接害工龄-年(同上)-->
+                                        <HARM_AGE_YEAR></HARM_AGE_YEAR>
+                                        <!--实际接害工龄-月(同上)-->
+                                        <HARM_AGE_MONTH>112</HARM_AGE_MONTH>
+                                    </EXAM_CONCLUSION>
+                                    <!--每个危害因素对应一个结论，各类粉尘只需填写一个大类粉尘的结论即可 -->
+                                    <EXAM_CONCLUSION>
+                                        <!-- 职业病危害因素代码-->
+                                        <ITAM_CODE></ITAM_CODE>
+                                        <!--危害因素名称-->
+                                        <ITAM_NAME></ITAM_NAME>
+                                        <!-- 体检结论代码-->
+                                        <EXAM_CONCLUSION_CODE>123</EXAM_CONCLUSION_CODE>
+                                        <!--疑似职业病代码(见字典职业病类型，当体检结论位疑似职业病时，需填写该字段) -->
+                                        <YSZYB_CODE></YSZYB_CODE>
+                                        <!--职业禁忌证名称(当体检结论是职业禁忌症时，需填写该字段)-->
+                                        <ZYJJZ_NAME></ZYJJZ_NAME>
+                                        <!--其他疾病或异常描述(当体检结论是其他疾病或异常时，需填写该字段)-->
+                                        <QTJB_NAME>dra</QTJB_NAME>
+                                        <!--开始接害日期(当体检类型是上岗前时非必填;当体检的危害因素是混合接触时，开始接害日期和接害工龄要分别按危害因素填写，各类粉尘只需填写一次)-->
+                                        <HARM_START_DATE></HARM_START_DATE>
+                                        <!-- 实际接害工龄-年(同上)-->
+                                        <HARM_AGE_YEAR></HARM_AGE_YEAR>
+                                        <!--实际接害工龄-月(同上)-->
+                                        <HARM_AGE_MONTH>112</HARM_AGE_MONTH>
+                                    </EXAM_CONCLUSION>
+                                    <!--每个危害因素对应一个结论，各类粉尘只需填写一个大类粉尘的结论即可 -->
+                                    <EXAM_CONCLUSION>
+                                        <!-- 职业病危害因素代码-->
+                                        <ITAM_CODE></ITAM_CODE>
+                                        <!--危害因素名称-->
+                                        <ITAM_NAME></ITAM_NAME>
+                                        <!-- 体检结论代码-->
+                                        <EXAM_CONCLUSION_CODE>123</EXAM_CONCLUSION_CODE>
+                                        <!--疑似职业病代码(见字典职业病类型，当体检结论位疑似职业病时，需填写该字段) -->
+                                        <YSZYB_CODE></YSZYB_CODE>
+                                        <!--职业禁忌证名称(当体检结论是职业禁忌症时，需填写该字段)-->
+                                        <ZYJJZ_NAME></ZYJJZ_NAME>
+                                        <!--其他疾病或异常描述(当体检结论是其他疾病或异常时，需填写该字段)-->
+                                        <QTJB_NAME>dra</QTJB_NAME>
+                                        <!--开始接害日期(当体检类型是上岗前时非必填;当体检的危害因素是混合接触时，开始接害日期和接害工龄要分别按危害因素填写，各类粉尘只需填写一次)-->
+                                        <HARM_START_DATE></HARM_START_DATE>
+                                        <!-- 实际接害工龄-年(同上)-->
+                                        <HARM_AGE_YEAR></HARM_AGE_YEAR>
+                                        <!--实际接害工龄-月(同上)-->
+                                        <HARM_AGE_MONTH>112</HARM_AGE_MONTH>
+                                    </EXAM_CONCLUSION>
+                        </EXAM_CONCLUSION_LIST>
+                        <!--体检结论信息结束-->
+                        <!--检查项目信息开始-->
+                        <EXAM_ITEM_RESULT_LIST>
+                                    <EXAM_ITEM_RESULT>
+                                        <!--检查项目父级名称(检查指标名称一级节点名称)-->
+                                        <EXAM_ITEM_PNAME></EXAM_ITEM_PNAME>
+                                        <!--检查项目名称-->
+                                        <EXAM_ITEM_NAME>hel0</EXAM_ITEM_NAME>
+                                        <!--检查项目代码-->
+                                        <EXAM_ITEM_CODE>1df990</EXAM_ITEM_CODE>
+                                        <!--检查结果类型代码-->
+                                        <EXAM_RESULT_TYPE></EXAM_RESULT_TYPE>
+                                        <!--检查结果-->
+                                        <EXAM_RESULT></EXAM_RESULT>
+                                        <!--检查项目计量单位及参考值范围(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <EXAM_ITEM_UNIT_CODE>个</EXAM_ITEM_UNIT_CODE>
+                                        <!--参考值范围小值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MIN></REFERENCE_RANGE_MIN>
+                                        <!--参考值范围大值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MAX></REFERENCE_RANGE_MAX>
+                                        <!--是否异常(0 正常、1 异常、3 未检查;当检查项目是胸片时，见胸片检查结果代码表)-->
+                                        <ABNORMAL>1</ABNORMAL>
+                                    </EXAM_ITEM_RESULT>
+                                    <EXAM_ITEM_RESULT>
+                                        <!--检查项目父级名称(检查指标名称一级节点名称)-->
+                                        <EXAM_ITEM_PNAME></EXAM_ITEM_PNAME>
+                                        <!--检查项目名称-->
+                                        <EXAM_ITEM_NAME>hel1</EXAM_ITEM_NAME>
+                                        <!--检查项目代码-->
+                                        <EXAM_ITEM_CODE>1df991</EXAM_ITEM_CODE>
+                                        <!--检查结果类型代码-->
+                                        <EXAM_RESULT_TYPE></EXAM_RESULT_TYPE>
+                                        <!--检查结果-->
+                                        <EXAM_RESULT></EXAM_RESULT>
+                                        <!--检查项目计量单位及参考值范围(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <EXAM_ITEM_UNIT_CODE>个</EXAM_ITEM_UNIT_CODE>
+                                        <!--参考值范围小值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MIN></REFERENCE_RANGE_MIN>
+                                        <!--参考值范围大值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MAX></REFERENCE_RANGE_MAX>
+                                        <!--是否异常(0 正常、1 异常、3 未检查;当检查项目是胸片时，见胸片检查结果代码表)-->
+                                        <ABNORMAL>1</ABNORMAL>
+                                    </EXAM_ITEM_RESULT>
+                                    <EXAM_ITEM_RESULT>
+                                        <!--检查项目父级名称(检查指标名称一级节点名称)-->
+                                        <EXAM_ITEM_PNAME></EXAM_ITEM_PNAME>
+                                        <!--检查项目名称-->
+                                        <EXAM_ITEM_NAME>hel2</EXAM_ITEM_NAME>
+                                        <!--检查项目代码-->
+                                        <EXAM_ITEM_CODE>1df992</EXAM_ITEM_CODE>
+                                        <!--检查结果类型代码-->
+                                        <EXAM_RESULT_TYPE></EXAM_RESULT_TYPE>
+                                        <!--检查结果-->
+                                        <EXAM_RESULT></EXAM_RESULT>
+                                        <!--检查项目计量单位及参考值范围(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <EXAM_ITEM_UNIT_CODE>个</EXAM_ITEM_UNIT_CODE>
+                                        <!--参考值范围小值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MIN></REFERENCE_RANGE_MIN>
+                                        <!--参考值范围大值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MAX></REFERENCE_RANGE_MAX>
+                                        <!--是否异常(0 正常、1 异常、3 未检查;当检查项目是胸片时，见胸片检查结果代码表)-->
+                                        <ABNORMAL>1</ABNORMAL>
+                                    </EXAM_ITEM_RESULT>
+                        </EXAM_ITEM_RESULT_LIST>
+                        <!--检查项目信息结束-->
+                        <!--填表人姓名-->
+                        <WRITE_PERSON></WRITE_PERSON>
+                        <!--填表人电话-->
+                        <WRITE_PERSON_TELPHONE></WRITE_PERSON_TELPHONE>
+                        <!-- 报告出具日期-->
+                        <WRITE_DATE></WRITE_DATE>
+                        <!-- 检查单位名称-->
+                        <REPORT_ORGAN_CREDIT_CODE></REPORT_ORGAN_CREDIT_CODE>
+                        <!--报告人姓名-->
+                        <REPORT_PERSON></REPORT_PERSON>
+                        <!--报告人联系电话-->
+                        <REPORT_PERSON_TEL></REPORT_PERSON_TEL>
+                        <!--报告日期-->
+                        <REPORT_DATE></REPORT_DATE>
+                        <!--报告单位名称-->
+                        <REPORT_UNIT></REPORT_UNIT>
+                        <!--备注-->
+                        <REMARK></REMARK>
+                        <!-- 审核信息开始 -->
+                        <AUDIT_INFO>
+                            <!-- 审核状态代码(必填 07 省级审核通过)-->
+                            <AUDITSTATUS></AUDITSTATUS>
+                            <!-- 审核意见 -->
+                            <AUDITINFO></AUDITINFO>
+                            <!-- 审核时间 -->
+                            <AUDITDATE></AUDITDATE>
+                            <!-- 审核人姓名 -->
+                            <AUDITOR_NAME>审计人2</AUDITOR_NAME>
+                            <!-- 审核机构 -->
+                            <AUDIT_ORG></AUDIT_ORG>
+                        </AUDIT_INFO>
+                        <!-- 审核信息结束 -->
+                    </HEALTH_EXAM_RECORD>
+                    <!-- 可重复多个 -->
+                    <HEALTH_EXAM_RECORD ID="">
+                        <ENTERPRISE_INFO>
+                            <!--用人单位名称-->
+                            <ENTERPRISE_NAME>神火医院审核部</ENTERPRISE_NAME>
+                            <!--统一社会信用代码(18 位)-->
+                            <CREDIT_CODE></CREDIT_CODE>
+                            <!-- 企业类型代码-->
+                            <ECONOMIC_TYPE_CODE></ECONOMIC_TYPE_CODE>
+                            <!--行业类别代码-->
+                            <INDUSTRY_CATEGORY_CODE></INDUSTRY_CATEGORY_CODE>
+                            <!--企业规模代码-->
+                            <BUSINESS_SCALE_CODE></BUSINESS_SCALE_CODE>
+                            <!--所属地区代码-->
+                            <ADDRESS_CODE>asdf3</ADDRESS_CODE>
+                            <!--用人单位详细地址-->
+                            <ADDRESS_DETAIL>d我家3</ADDRESS_DETAIL>
+                            <!--用人单位地址邮政代码-->
+                            <ADDRESS_ZIP_CODE>77773</ADDRESS_ZIP_CODE>
+                            <!--用人单位联系人名称-->
+                            <ENTERPRISE_CONTACT></ENTERPRISE_CONTACT>
+                            <!--用人单位联系人电话-->
+                            <CONTACT_TELPHONE></CONTACT_TELPHONE>
+                            <!--用人单位所在区全名称(如:北京市市辖区海淀区)-->
+                            <ALL_NAME>全称3</ALL_NAME>
+                        </ENTERPRISE_INFO>
+                        <!--用工单位信息开始-->
+                        <ENTERPRISE_INFO_EMPLOYER>
+                            <!--用工单位名称-->
+                            <ENTERPRISE_NAME_EMPLOYER></ENTERPRISE_NAME_EMPLOYER>
+                            <!--用工单位统一社会信用代码(18 位)-->
+                            <CREDIT_CODE_EMPLOYER></CREDIT_CODE_EMPLOYER>
+                            <!-- 用工单位企业类型代码-->
+                            <ECONOMIC_TYPE_CODE_EMPLOYER></ECONOMIC_TYPE_CODE_EMPLOYER>
+                            <!--用工单位行业类别代码-->
+                            <INDUSTRY_CATEGORY_CODE_EMPLOYER></INDUSTRY_CATEGORY_CODE_EMPLOYER>
+                            <!--用工单位企业规模代码-->
+                            <BUSINESS_SCALE_CODE_EMPLOYER></BUSINESS_SCALE_CODE_EMPLOYER>
+                            <!--用工单位所属地区代码-->
+                            <ADDRESS_CODE_EMPLOYER>公司3</ADDRESS_CODE_EMPLOYER>
+                            <!--用工单位所在区全名称(如:北京市市辖区海淀区)-->
+                            <ALL_NAME_EMPLOYER></ALL_NAME_EMPLOYER>
+                        </ENTERPRISE_INFO_EMPLOYER>
+                        <!--用工单位信息结束-->
+                        <!--劳动者信息开始-->
+                        <WORKER_INFO>
+                            <!-- 姓名 -->
+                            <WORKER_NAME></WORKER_NAME>
+                            <!-- 身份证件类型代码 -->
+                            <ID_CARD_TYPE_CODE></ID_CARD_TYPE_CODE>
+                            <!-- 身份证件号码 -->
+                            <ID_CARD></ID_CARD>
+                            <!-- 性别代码-->
+                            <GENDER_CODE></GENDER_CODE>
+                            <!-- 出生日期-->
+                            <BIRTH_DATE></BIRTH_DATE>
+                            <!--联系电话-->
+                            <WORKER_TELPHONE></WORKER_TELPHONE>
+                        </WORKER_INFO>
+                        <!--劳动者信息结束-->
+                        <!--监测类型代码-->
+                        <JC_TYPE></JC_TYPE>
+                        <!--体检类型代码-->
+                        <EXAM_TYPE_CODE></EXAM_TYPE_CODE>
+                        <!--体检日期-->
+                        <EXAM_DATE></EXAM_DATE>
+                        <!--接触的职业病危害因素代码-->
+                        <CONTACT_FACTOR_CODE></CONTACT_FACTOR_CODE>
+                        <!--接触的其他职业病危害因素-->
+                        <CONTACT_FACTOR_OTHER></CONTACT_FACTOR_OTHER>
+                        <!-- 体检危害因素代码-->
+                        <FACTOR_CODE></FACTOR_CODE>
+                        <!--其他危害因素具体名称(如果危害因素选择其他，需要在这里填写具体的危害因素名称) -->
+                        <FACTOR_OTHER></FACTOR_OTHER>
+                        <!--工种代码-->
+                        <WORK_TYPE_CODE></WORK_TYPE_CODE>
+                        <!--其他工种名称(工种选择其他时，需要在这里保存具体工种的名字)-->
+                        <OTHER_WORK_TYPE></OTHER_WORK_TYPE>
+                        <!--是否复查(0 否、1 是)-->
+                        <IS_REVIEW></IS_REVIEW>
+                        <!--创建地区代码-->
+                        <AREA_CODE>hello world3</AREA_CODE>
+                        <!--创建机构代码-->
+                        <ORG_CODE></ORG_CODE>
+                        <!--体检结论信息开始-->
+                        <EXAM_CONCLUSION_LIST>
+                                    <!--每个危害因素对应一个结论，各类粉尘只需填写一个大类粉尘的结论即可 -->
+                                    <EXAM_CONCLUSION>
+                                        <!-- 职业病危害因素代码-->
+                                        <ITAM_CODE></ITAM_CODE>
+                                        <!--危害因素名称-->
+                                        <ITAM_NAME></ITAM_NAME>
+                                        <!-- 体检结论代码-->
+                                        <EXAM_CONCLUSION_CODE>123</EXAM_CONCLUSION_CODE>
+                                        <!--疑似职业病代码(见字典职业病类型，当体检结论位疑似职业病时，需填写该字段) -->
+                                        <YSZYB_CODE></YSZYB_CODE>
+                                        <!--职业禁忌证名称(当体检结论是职业禁忌症时，需填写该字段)-->
+                                        <ZYJJZ_NAME></ZYJJZ_NAME>
+                                        <!--其他疾病或异常描述(当体检结论是其他疾病或异常时，需填写该字段)-->
+                                        <QTJB_NAME>dra</QTJB_NAME>
+                                        <!--开始接害日期(当体检类型是上岗前时非必填;当体检的危害因素是混合接触时，开始接害日期和接害工龄要分别按危害因素填写，各类粉尘只需填写一次)-->
+                                        <HARM_START_DATE></HARM_START_DATE>
+                                        <!-- 实际接害工龄-年(同上)-->
+                                        <HARM_AGE_YEAR></HARM_AGE_YEAR>
+                                        <!--实际接害工龄-月(同上)-->
+                                        <HARM_AGE_MONTH>112</HARM_AGE_MONTH>
+                                    </EXAM_CONCLUSION>
+                                    <!--每个危害因素对应一个结论，各类粉尘只需填写一个大类粉尘的结论即可 -->
+                                    <EXAM_CONCLUSION>
+                                        <!-- 职业病危害因素代码-->
+                                        <ITAM_CODE></ITAM_CODE>
+                                        <!--危害因素名称-->
+                                        <ITAM_NAME></ITAM_NAME>
+                                        <!-- 体检结论代码-->
+                                        <EXAM_CONCLUSION_CODE>123</EXAM_CONCLUSION_CODE>
+                                        <!--疑似职业病代码(见字典职业病类型，当体检结论位疑似职业病时，需填写该字段) -->
+                                        <YSZYB_CODE></YSZYB_CODE>
+                                        <!--职业禁忌证名称(当体检结论是职业禁忌症时，需填写该字段)-->
+                                        <ZYJJZ_NAME></ZYJJZ_NAME>
+                                        <!--其他疾病或异常描述(当体检结论是其他疾病或异常时，需填写该字段)-->
+                                        <QTJB_NAME>dra</QTJB_NAME>
+                                        <!--开始接害日期(当体检类型是上岗前时非必填;当体检的危害因素是混合接触时，开始接害日期和接害工龄要分别按危害因素填写，各类粉尘只需填写一次)-->
+                                        <HARM_START_DATE></HARM_START_DATE>
+                                        <!-- 实际接害工龄-年(同上)-->
+                                        <HARM_AGE_YEAR></HARM_AGE_YEAR>
+                                        <!--实际接害工龄-月(同上)-->
+                                        <HARM_AGE_MONTH>112</HARM_AGE_MONTH>
+                                    </EXAM_CONCLUSION>
+                                    <!--每个危害因素对应一个结论，各类粉尘只需填写一个大类粉尘的结论即可 -->
+                                    <EXAM_CONCLUSION>
+                                        <!-- 职业病危害因素代码-->
+                                        <ITAM_CODE></ITAM_CODE>
+                                        <!--危害因素名称-->
+                                        <ITAM_NAME></ITAM_NAME>
+                                        <!-- 体检结论代码-->
+                                        <EXAM_CONCLUSION_CODE>123</EXAM_CONCLUSION_CODE>
+                                        <!--疑似职业病代码(见字典职业病类型，当体检结论位疑似职业病时，需填写该字段) -->
+                                        <YSZYB_CODE></YSZYB_CODE>
+                                        <!--职业禁忌证名称(当体检结论是职业禁忌症时，需填写该字段)-->
+                                        <ZYJJZ_NAME></ZYJJZ_NAME>
+                                        <!--其他疾病或异常描述(当体检结论是其他疾病或异常时，需填写该字段)-->
+                                        <QTJB_NAME>dra</QTJB_NAME>
+                                        <!--开始接害日期(当体检类型是上岗前时非必填;当体检的危害因素是混合接触时，开始接害日期和接害工龄要分别按危害因素填写，各类粉尘只需填写一次)-->
+                                        <HARM_START_DATE></HARM_START_DATE>
+                                        <!-- 实际接害工龄-年(同上)-->
+                                        <HARM_AGE_YEAR></HARM_AGE_YEAR>
+                                        <!--实际接害工龄-月(同上)-->
+                                        <HARM_AGE_MONTH>112</HARM_AGE_MONTH>
+                                    </EXAM_CONCLUSION>
+                                    <!--每个危害因素对应一个结论，各类粉尘只需填写一个大类粉尘的结论即可 -->
+                                    <EXAM_CONCLUSION>
+                                        <!-- 职业病危害因素代码-->
+                                        <ITAM_CODE></ITAM_CODE>
+                                        <!--危害因素名称-->
+                                        <ITAM_NAME></ITAM_NAME>
+                                        <!-- 体检结论代码-->
+                                        <EXAM_CONCLUSION_CODE>123</EXAM_CONCLUSION_CODE>
+                                        <!--疑似职业病代码(见字典职业病类型，当体检结论位疑似职业病时，需填写该字段) -->
+                                        <YSZYB_CODE></YSZYB_CODE>
+                                        <!--职业禁忌证名称(当体检结论是职业禁忌症时，需填写该字段)-->
+                                        <ZYJJZ_NAME></ZYJJZ_NAME>
+                                        <!--其他疾病或异常描述(当体检结论是其他疾病或异常时，需填写该字段)-->
+                                        <QTJB_NAME>dra</QTJB_NAME>
+                                        <!--开始接害日期(当体检类型是上岗前时非必填;当体检的危害因素是混合接触时，开始接害日期和接害工龄要分别按危害因素填写，各类粉尘只需填写一次)-->
+                                        <HARM_START_DATE></HARM_START_DATE>
+                                        <!-- 实际接害工龄-年(同上)-->
+                                        <HARM_AGE_YEAR></HARM_AGE_YEAR>
+                                        <!--实际接害工龄-月(同上)-->
+                                        <HARM_AGE_MONTH>112</HARM_AGE_MONTH>
+                                    </EXAM_CONCLUSION>
+                                    <!--每个危害因素对应一个结论，各类粉尘只需填写一个大类粉尘的结论即可 -->
+                                    <EXAM_CONCLUSION>
+                                        <!-- 职业病危害因素代码-->
+                                        <ITAM_CODE></ITAM_CODE>
+                                        <!--危害因素名称-->
+                                        <ITAM_NAME></ITAM_NAME>
+                                        <!-- 体检结论代码-->
+                                        <EXAM_CONCLUSION_CODE>123</EXAM_CONCLUSION_CODE>
+                                        <!--疑似职业病代码(见字典职业病类型，当体检结论位疑似职业病时，需填写该字段) -->
+                                        <YSZYB_CODE></YSZYB_CODE>
+                                        <!--职业禁忌证名称(当体检结论是职业禁忌症时，需填写该字段)-->
+                                        <ZYJJZ_NAME></ZYJJZ_NAME>
+                                        <!--其他疾病或异常描述(当体检结论是其他疾病或异常时，需填写该字段)-->
+                                        <QTJB_NAME>dra</QTJB_NAME>
+                                        <!--开始接害日期(当体检类型是上岗前时非必填;当体检的危害因素是混合接触时，开始接害日期和接害工龄要分别按危害因素填写，各类粉尘只需填写一次)-->
+                                        <HARM_START_DATE></HARM_START_DATE>
+                                        <!-- 实际接害工龄-年(同上)-->
+                                        <HARM_AGE_YEAR></HARM_AGE_YEAR>
+                                        <!--实际接害工龄-月(同上)-->
+                                        <HARM_AGE_MONTH>112</HARM_AGE_MONTH>
+                                    </EXAM_CONCLUSION>
+                        </EXAM_CONCLUSION_LIST>
+                        <!--体检结论信息结束-->
+                        <!--检查项目信息开始-->
+                        <EXAM_ITEM_RESULT_LIST>
+                                    <EXAM_ITEM_RESULT>
+                                        <!--检查项目父级名称(检查指标名称一级节点名称)-->
+                                        <EXAM_ITEM_PNAME></EXAM_ITEM_PNAME>
+                                        <!--检查项目名称-->
+                                        <EXAM_ITEM_NAME>hel0</EXAM_ITEM_NAME>
+                                        <!--检查项目代码-->
+                                        <EXAM_ITEM_CODE>1df990</EXAM_ITEM_CODE>
+                                        <!--检查结果类型代码-->
+                                        <EXAM_RESULT_TYPE></EXAM_RESULT_TYPE>
+                                        <!--检查结果-->
+                                        <EXAM_RESULT></EXAM_RESULT>
+                                        <!--检查项目计量单位及参考值范围(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <EXAM_ITEM_UNIT_CODE>个</EXAM_ITEM_UNIT_CODE>
+                                        <!--参考值范围小值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MIN></REFERENCE_RANGE_MIN>
+                                        <!--参考值范围大值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MAX></REFERENCE_RANGE_MAX>
+                                        <!--是否异常(0 正常、1 异常、3 未检查;当检查项目是胸片时，见胸片检查结果代码表)-->
+                                        <ABNORMAL>1</ABNORMAL>
+                                    </EXAM_ITEM_RESULT>
+                                    <EXAM_ITEM_RESULT>
+                                        <!--检查项目父级名称(检查指标名称一级节点名称)-->
+                                        <EXAM_ITEM_PNAME></EXAM_ITEM_PNAME>
+                                        <!--检查项目名称-->
+                                        <EXAM_ITEM_NAME>hel1</EXAM_ITEM_NAME>
+                                        <!--检查项目代码-->
+                                        <EXAM_ITEM_CODE>1df991</EXAM_ITEM_CODE>
+                                        <!--检查结果类型代码-->
+                                        <EXAM_RESULT_TYPE></EXAM_RESULT_TYPE>
+                                        <!--检查结果-->
+                                        <EXAM_RESULT></EXAM_RESULT>
+                                        <!--检查项目计量单位及参考值范围(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <EXAM_ITEM_UNIT_CODE>个</EXAM_ITEM_UNIT_CODE>
+                                        <!--参考值范围小值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MIN></REFERENCE_RANGE_MIN>
+                                        <!--参考值范围大值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MAX></REFERENCE_RANGE_MAX>
+                                        <!--是否异常(0 正常、1 异常、3 未检查;当检查项目是胸片时，见胸片检查结果代码表)-->
+                                        <ABNORMAL>1</ABNORMAL>
+                                    </EXAM_ITEM_RESULT>
+                                    <EXAM_ITEM_RESULT>
+                                        <!--检查项目父级名称(检查指标名称一级节点名称)-->
+                                        <EXAM_ITEM_PNAME></EXAM_ITEM_PNAME>
+                                        <!--检查项目名称-->
+                                        <EXAM_ITEM_NAME>hel2</EXAM_ITEM_NAME>
+                                        <!--检查项目代码-->
+                                        <EXAM_ITEM_CODE>1df992</EXAM_ITEM_CODE>
+                                        <!--检查结果类型代码-->
+                                        <EXAM_RESULT_TYPE></EXAM_RESULT_TYPE>
+                                        <!--检查结果-->
+                                        <EXAM_RESULT></EXAM_RESULT>
+                                        <!--检查项目计量单位及参考值范围(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <EXAM_ITEM_UNIT_CODE>个</EXAM_ITEM_UNIT_CODE>
+                                        <!--参考值范围小值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MIN></REFERENCE_RANGE_MIN>
+                                        <!--参考值范围大值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MAX></REFERENCE_RANGE_MAX>
+                                        <!--是否异常(0 正常、1 异常、3 未检查;当检查项目是胸片时，见胸片检查结果代码表)-->
+                                        <ABNORMAL>1</ABNORMAL>
+                                    </EXAM_ITEM_RESULT>
+                        </EXAM_ITEM_RESULT_LIST>
+                        <!--检查项目信息结束-->
+                        <!--填表人姓名-->
+                        <WRITE_PERSON></WRITE_PERSON>
+                        <!--填表人电话-->
+                        <WRITE_PERSON_TELPHONE></WRITE_PERSON_TELPHONE>
+                        <!-- 报告出具日期-->
+                        <WRITE_DATE></WRITE_DATE>
+                        <!-- 检查单位名称-->
+                        <REPORT_ORGAN_CREDIT_CODE></REPORT_ORGAN_CREDIT_CODE>
+                        <!--报告人姓名-->
+                        <REPORT_PERSON></REPORT_PERSON>
+                        <!--报告人联系电话-->
+                        <REPORT_PERSON_TEL></REPORT_PERSON_TEL>
+                        <!--报告日期-->
+                        <REPORT_DATE></REPORT_DATE>
+                        <!--报告单位名称-->
+                        <REPORT_UNIT></REPORT_UNIT>
+                        <!--备注-->
+                        <REMARK></REMARK>
+                        <!-- 审核信息开始 -->
+                        <AUDIT_INFO>
+                            <!-- 审核状态代码(必填 07 省级审核通过)-->
+                            <AUDITSTATUS></AUDITSTATUS>
+                            <!-- 审核意见 -->
+                            <AUDITINFO></AUDITINFO>
+                            <!-- 审核时间 -->
+                            <AUDITDATE></AUDITDATE>
+                            <!-- 审核人姓名 -->
+                            <AUDITOR_NAME>审计人3</AUDITOR_NAME>
+                            <!-- 审核机构 -->
+                            <AUDIT_ORG></AUDIT_ORG>
+                        </AUDIT_INFO>
+                        <!-- 审核信息结束 -->
+                    </HEALTH_EXAM_RECORD>
+                    <!-- 可重复多个 -->
+                    <HEALTH_EXAM_RECORD ID="">
+                        <ENTERPRISE_INFO>
+                            <!--用人单位名称-->
+                            <ENTERPRISE_NAME>神火医院审核部</ENTERPRISE_NAME>
+                            <!--统一社会信用代码(18 位)-->
+                            <CREDIT_CODE></CREDIT_CODE>
+                            <!-- 企业类型代码-->
+                            <ECONOMIC_TYPE_CODE></ECONOMIC_TYPE_CODE>
+                            <!--行业类别代码-->
+                            <INDUSTRY_CATEGORY_CODE></INDUSTRY_CATEGORY_CODE>
+                            <!--企业规模代码-->
+                            <BUSINESS_SCALE_CODE></BUSINESS_SCALE_CODE>
+                            <!--所属地区代码-->
+                            <ADDRESS_CODE>asdf4</ADDRESS_CODE>
+                            <!--用人单位详细地址-->
+                            <ADDRESS_DETAIL>d我家4</ADDRESS_DETAIL>
+                            <!--用人单位地址邮政代码-->
+                            <ADDRESS_ZIP_CODE>77774</ADDRESS_ZIP_CODE>
+                            <!--用人单位联系人名称-->
+                            <ENTERPRISE_CONTACT></ENTERPRISE_CONTACT>
+                            <!--用人单位联系人电话-->
+                            <CONTACT_TELPHONE></CONTACT_TELPHONE>
+                            <!--用人单位所在区全名称(如:北京市市辖区海淀区)-->
+                            <ALL_NAME>全称4</ALL_NAME>
+                        </ENTERPRISE_INFO>
+                        <!--用工单位信息开始-->
+                        <ENTERPRISE_INFO_EMPLOYER>
+                            <!--用工单位名称-->
+                            <ENTERPRISE_NAME_EMPLOYER></ENTERPRISE_NAME_EMPLOYER>
+                            <!--用工单位统一社会信用代码(18 位)-->
+                            <CREDIT_CODE_EMPLOYER></CREDIT_CODE_EMPLOYER>
+                            <!-- 用工单位企业类型代码-->
+                            <ECONOMIC_TYPE_CODE_EMPLOYER></ECONOMIC_TYPE_CODE_EMPLOYER>
+                            <!--用工单位行业类别代码-->
+                            <INDUSTRY_CATEGORY_CODE_EMPLOYER></INDUSTRY_CATEGORY_CODE_EMPLOYER>
+                            <!--用工单位企业规模代码-->
+                            <BUSINESS_SCALE_CODE_EMPLOYER></BUSINESS_SCALE_CODE_EMPLOYER>
+                            <!--用工单位所属地区代码-->
+                            <ADDRESS_CODE_EMPLOYER>公司4</ADDRESS_CODE_EMPLOYER>
+                            <!--用工单位所在区全名称(如:北京市市辖区海淀区)-->
+                            <ALL_NAME_EMPLOYER></ALL_NAME_EMPLOYER>
+                        </ENTERPRISE_INFO_EMPLOYER>
+                        <!--用工单位信息结束-->
+                        <!--劳动者信息开始-->
+                        <WORKER_INFO>
+                            <!-- 姓名 -->
+                            <WORKER_NAME></WORKER_NAME>
+                            <!-- 身份证件类型代码 -->
+                            <ID_CARD_TYPE_CODE></ID_CARD_TYPE_CODE>
+                            <!-- 身份证件号码 -->
+                            <ID_CARD></ID_CARD>
+                            <!-- 性别代码-->
+                            <GENDER_CODE></GENDER_CODE>
+                            <!-- 出生日期-->
+                            <BIRTH_DATE></BIRTH_DATE>
+                            <!--联系电话-->
+                            <WORKER_TELPHONE></WORKER_TELPHONE>
+                        </WORKER_INFO>
+                        <!--劳动者信息结束-->
+                        <!--监测类型代码-->
+                        <JC_TYPE></JC_TYPE>
+                        <!--体检类型代码-->
+                        <EXAM_TYPE_CODE></EXAM_TYPE_CODE>
+                        <!--体检日期-->
+                        <EXAM_DATE></EXAM_DATE>
+                        <!--接触的职业病危害因素代码-->
+                        <CONTACT_FACTOR_CODE></CONTACT_FACTOR_CODE>
+                        <!--接触的其他职业病危害因素-->
+                        <CONTACT_FACTOR_OTHER></CONTACT_FACTOR_OTHER>
+                        <!-- 体检危害因素代码-->
+                        <FACTOR_CODE></FACTOR_CODE>
+                        <!--其他危害因素具体名称(如果危害因素选择其他，需要在这里填写具体的危害因素名称) -->
+                        <FACTOR_OTHER></FACTOR_OTHER>
+                        <!--工种代码-->
+                        <WORK_TYPE_CODE></WORK_TYPE_CODE>
+                        <!--其他工种名称(工种选择其他时，需要在这里保存具体工种的名字)-->
+                        <OTHER_WORK_TYPE></OTHER_WORK_TYPE>
+                        <!--是否复查(0 否、1 是)-->
+                        <IS_REVIEW></IS_REVIEW>
+                        <!--创建地区代码-->
+                        <AREA_CODE>hello world4</AREA_CODE>
+                        <!--创建机构代码-->
+                        <ORG_CODE></ORG_CODE>
+                        <!--体检结论信息开始-->
+                        <EXAM_CONCLUSION_LIST>
+                                    <!--每个危害因素对应一个结论，各类粉尘只需填写一个大类粉尘的结论即可 -->
+                                    <EXAM_CONCLUSION>
+                                        <!-- 职业病危害因素代码-->
+                                        <ITAM_CODE></ITAM_CODE>
+                                        <!--危害因素名称-->
+                                        <ITAM_NAME></ITAM_NAME>
+                                        <!-- 体检结论代码-->
+                                        <EXAM_CONCLUSION_CODE>123</EXAM_CONCLUSION_CODE>
+                                        <!--疑似职业病代码(见字典职业病类型，当体检结论位疑似职业病时，需填写该字段) -->
+                                        <YSZYB_CODE></YSZYB_CODE>
+                                        <!--职业禁忌证名称(当体检结论是职业禁忌症时，需填写该字段)-->
+                                        <ZYJJZ_NAME></ZYJJZ_NAME>
+                                        <!--其他疾病或异常描述(当体检结论是其他疾病或异常时，需填写该字段)-->
+                                        <QTJB_NAME>dra</QTJB_NAME>
+                                        <!--开始接害日期(当体检类型是上岗前时非必填;当体检的危害因素是混合接触时，开始接害日期和接害工龄要分别按危害因素填写，各类粉尘只需填写一次)-->
+                                        <HARM_START_DATE></HARM_START_DATE>
+                                        <!-- 实际接害工龄-年(同上)-->
+                                        <HARM_AGE_YEAR></HARM_AGE_YEAR>
+                                        <!--实际接害工龄-月(同上)-->
+                                        <HARM_AGE_MONTH>112</HARM_AGE_MONTH>
+                                    </EXAM_CONCLUSION>
+                                    <!--每个危害因素对应一个结论，各类粉尘只需填写一个大类粉尘的结论即可 -->
+                                    <EXAM_CONCLUSION>
+                                        <!-- 职业病危害因素代码-->
+                                        <ITAM_CODE></ITAM_CODE>
+                                        <!--危害因素名称-->
+                                        <ITAM_NAME></ITAM_NAME>
+                                        <!-- 体检结论代码-->
+                                        <EXAM_CONCLUSION_CODE>123</EXAM_CONCLUSION_CODE>
+                                        <!--疑似职业病代码(见字典职业病类型，当体检结论位疑似职业病时，需填写该字段) -->
+                                        <YSZYB_CODE></YSZYB_CODE>
+                                        <!--职业禁忌证名称(当体检结论是职业禁忌症时，需填写该字段)-->
+                                        <ZYJJZ_NAME></ZYJJZ_NAME>
+                                        <!--其他疾病或异常描述(当体检结论是其他疾病或异常时，需填写该字段)-->
+                                        <QTJB_NAME>dra</QTJB_NAME>
+                                        <!--开始接害日期(当体检类型是上岗前时非必填;当体检的危害因素是混合接触时，开始接害日期和接害工龄要分别按危害因素填写，各类粉尘只需填写一次)-->
+                                        <HARM_START_DATE></HARM_START_DATE>
+                                        <!-- 实际接害工龄-年(同上)-->
+                                        <HARM_AGE_YEAR></HARM_AGE_YEAR>
+                                        <!--实际接害工龄-月(同上)-->
+                                        <HARM_AGE_MONTH>112</HARM_AGE_MONTH>
+                                    </EXAM_CONCLUSION>
+                                    <!--每个危害因素对应一个结论，各类粉尘只需填写一个大类粉尘的结论即可 -->
+                                    <EXAM_CONCLUSION>
+                                        <!-- 职业病危害因素代码-->
+                                        <ITAM_CODE></ITAM_CODE>
+                                        <!--危害因素名称-->
+                                        <ITAM_NAME></ITAM_NAME>
+                                        <!-- 体检结论代码-->
+                                        <EXAM_CONCLUSION_CODE>123</EXAM_CONCLUSION_CODE>
+                                        <!--疑似职业病代码(见字典职业病类型，当体检结论位疑似职业病时，需填写该字段) -->
+                                        <YSZYB_CODE></YSZYB_CODE>
+                                        <!--职业禁忌证名称(当体检结论是职业禁忌症时，需填写该字段)-->
+                                        <ZYJJZ_NAME></ZYJJZ_NAME>
+                                        <!--其他疾病或异常描述(当体检结论是其他疾病或异常时，需填写该字段)-->
+                                        <QTJB_NAME>dra</QTJB_NAME>
+                                        <!--开始接害日期(当体检类型是上岗前时非必填;当体检的危害因素是混合接触时，开始接害日期和接害工龄要分别按危害因素填写，各类粉尘只需填写一次)-->
+                                        <HARM_START_DATE></HARM_START_DATE>
+                                        <!-- 实际接害工龄-年(同上)-->
+                                        <HARM_AGE_YEAR></HARM_AGE_YEAR>
+                                        <!--实际接害工龄-月(同上)-->
+                                        <HARM_AGE_MONTH>112</HARM_AGE_MONTH>
+                                    </EXAM_CONCLUSION>
+                                    <!--每个危害因素对应一个结论，各类粉尘只需填写一个大类粉尘的结论即可 -->
+                                    <EXAM_CONCLUSION>
+                                        <!-- 职业病危害因素代码-->
+                                        <ITAM_CODE></ITAM_CODE>
+                                        <!--危害因素名称-->
+                                        <ITAM_NAME></ITAM_NAME>
+                                        <!-- 体检结论代码-->
+                                        <EXAM_CONCLUSION_CODE>123</EXAM_CONCLUSION_CODE>
+                                        <!--疑似职业病代码(见字典职业病类型，当体检结论位疑似职业病时，需填写该字段) -->
+                                        <YSZYB_CODE></YSZYB_CODE>
+                                        <!--职业禁忌证名称(当体检结论是职业禁忌症时，需填写该字段)-->
+                                        <ZYJJZ_NAME></ZYJJZ_NAME>
+                                        <!--其他疾病或异常描述(当体检结论是其他疾病或异常时，需填写该字段)-->
+                                        <QTJB_NAME>dra</QTJB_NAME>
+                                        <!--开始接害日期(当体检类型是上岗前时非必填;当体检的危害因素是混合接触时，开始接害日期和接害工龄要分别按危害因素填写，各类粉尘只需填写一次)-->
+                                        <HARM_START_DATE></HARM_START_DATE>
+                                        <!-- 实际接害工龄-年(同上)-->
+                                        <HARM_AGE_YEAR></HARM_AGE_YEAR>
+                                        <!--实际接害工龄-月(同上)-->
+                                        <HARM_AGE_MONTH>112</HARM_AGE_MONTH>
+                                    </EXAM_CONCLUSION>
+                                    <!--每个危害因素对应一个结论，各类粉尘只需填写一个大类粉尘的结论即可 -->
+                                    <EXAM_CONCLUSION>
+                                        <!-- 职业病危害因素代码-->
+                                        <ITAM_CODE></ITAM_CODE>
+                                        <!--危害因素名称-->
+                                        <ITAM_NAME></ITAM_NAME>
+                                        <!-- 体检结论代码-->
+                                        <EXAM_CONCLUSION_CODE>123</EXAM_CONCLUSION_CODE>
+                                        <!--疑似职业病代码(见字典职业病类型，当体检结论位疑似职业病时，需填写该字段) -->
+                                        <YSZYB_CODE></YSZYB_CODE>
+                                        <!--职业禁忌证名称(当体检结论是职业禁忌症时，需填写该字段)-->
+                                        <ZYJJZ_NAME></ZYJJZ_NAME>
+                                        <!--其他疾病或异常描述(当体检结论是其他疾病或异常时，需填写该字段)-->
+                                        <QTJB_NAME>dra</QTJB_NAME>
+                                        <!--开始接害日期(当体检类型是上岗前时非必填;当体检的危害因素是混合接触时，开始接害日期和接害工龄要分别按危害因素填写，各类粉尘只需填写一次)-->
+                                        <HARM_START_DATE></HARM_START_DATE>
+                                        <!-- 实际接害工龄-年(同上)-->
+                                        <HARM_AGE_YEAR></HARM_AGE_YEAR>
+                                        <!--实际接害工龄-月(同上)-->
+                                        <HARM_AGE_MONTH>112</HARM_AGE_MONTH>
+                                    </EXAM_CONCLUSION>
+                        </EXAM_CONCLUSION_LIST>
+                        <!--体检结论信息结束-->
+                        <!--检查项目信息开始-->
+                        <EXAM_ITEM_RESULT_LIST>
+                                    <EXAM_ITEM_RESULT>
+                                        <!--检查项目父级名称(检查指标名称一级节点名称)-->
+                                        <EXAM_ITEM_PNAME></EXAM_ITEM_PNAME>
+                                        <!--检查项目名称-->
+                                        <EXAM_ITEM_NAME>hel0</EXAM_ITEM_NAME>
+                                        <!--检查项目代码-->
+                                        <EXAM_ITEM_CODE>1df990</EXAM_ITEM_CODE>
+                                        <!--检查结果类型代码-->
+                                        <EXAM_RESULT_TYPE></EXAM_RESULT_TYPE>
+                                        <!--检查结果-->
+                                        <EXAM_RESULT></EXAM_RESULT>
+                                        <!--检查项目计量单位及参考值范围(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <EXAM_ITEM_UNIT_CODE>个</EXAM_ITEM_UNIT_CODE>
+                                        <!--参考值范围小值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MIN></REFERENCE_RANGE_MIN>
+                                        <!--参考值范围大值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MAX></REFERENCE_RANGE_MAX>
+                                        <!--是否异常(0 正常、1 异常、3 未检查;当检查项目是胸片时，见胸片检查结果代码表)-->
+                                        <ABNORMAL>1</ABNORMAL>
+                                    </EXAM_ITEM_RESULT>
+                                    <EXAM_ITEM_RESULT>
+                                        <!--检查项目父级名称(检查指标名称一级节点名称)-->
+                                        <EXAM_ITEM_PNAME></EXAM_ITEM_PNAME>
+                                        <!--检查项目名称-->
+                                        <EXAM_ITEM_NAME>hel1</EXAM_ITEM_NAME>
+                                        <!--检查项目代码-->
+                                        <EXAM_ITEM_CODE>1df991</EXAM_ITEM_CODE>
+                                        <!--检查结果类型代码-->
+                                        <EXAM_RESULT_TYPE></EXAM_RESULT_TYPE>
+                                        <!--检查结果-->
+                                        <EXAM_RESULT></EXAM_RESULT>
+                                        <!--检查项目计量单位及参考值范围(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <EXAM_ITEM_UNIT_CODE>个</EXAM_ITEM_UNIT_CODE>
+                                        <!--参考值范围小值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MIN></REFERENCE_RANGE_MIN>
+                                        <!--参考值范围大值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MAX></REFERENCE_RANGE_MAX>
+                                        <!--是否异常(0 正常、1 异常、3 未检查;当检查项目是胸片时，见胸片检查结果代码表)-->
+                                        <ABNORMAL>1</ABNORMAL>
+                                    </EXAM_ITEM_RESULT>
+                                    <EXAM_ITEM_RESULT>
+                                        <!--检查项目父级名称(检查指标名称一级节点名称)-->
+                                        <EXAM_ITEM_PNAME></EXAM_ITEM_PNAME>
+                                        <!--检查项目名称-->
+                                        <EXAM_ITEM_NAME>hel2</EXAM_ITEM_NAME>
+                                        <!--检查项目代码-->
+                                        <EXAM_ITEM_CODE>1df992</EXAM_ITEM_CODE>
+                                        <!--检查结果类型代码-->
+                                        <EXAM_RESULT_TYPE></EXAM_RESULT_TYPE>
+                                        <!--检查结果-->
+                                        <EXAM_RESULT></EXAM_RESULT>
+                                        <!--检查项目计量单位及参考值范围(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <EXAM_ITEM_UNIT_CODE>个</EXAM_ITEM_UNIT_CODE>
+                                        <!--参考值范围小值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MIN></REFERENCE_RANGE_MIN>
+                                        <!--参考值范围大值(只有检查结果为数字类型的需要填写，没有时可不填写-)-->
+                                        <REFERENCE_RANGE_MAX></REFERENCE_RANGE_MAX>
+                                        <!--是否异常(0 正常、1 异常、3 未检查;当检查项目是胸片时，见胸片检查结果代码表)-->
+                                        <ABNORMAL>1</ABNORMAL>
+                                    </EXAM_ITEM_RESULT>
+                        </EXAM_ITEM_RESULT_LIST>
+                        <!--检查项目信息结束-->
+                        <!--填表人姓名-->
+                        <WRITE_PERSON></WRITE_PERSON>
+                        <!--填表人电话-->
+                        <WRITE_PERSON_TELPHONE></WRITE_PERSON_TELPHONE>
+                        <!-- 报告出具日期-->
+                        <WRITE_DATE></WRITE_DATE>
+                        <!-- 检查单位名称-->
+                        <REPORT_ORGAN_CREDIT_CODE></REPORT_ORGAN_CREDIT_CODE>
+                        <!--报告人姓名-->
+                        <REPORT_PERSON></REPORT_PERSON>
+                        <!--报告人联系电话-->
+                        <REPORT_PERSON_TEL></REPORT_PERSON_TEL>
+                        <!--报告日期-->
+                        <REPORT_DATE></REPORT_DATE>
+                        <!--报告单位名称-->
+                        <REPORT_UNIT></REPORT_UNIT>
+                        <!--备注-->
+                        <REMARK></REMARK>
+                        <!-- 审核信息开始 -->
+                        <AUDIT_INFO>
+                            <!-- 审核状态代码(必填 07 省级审核通过)-->
+                            <AUDITSTATUS></AUDITSTATUS>
+                            <!-- 审核意见 -->
+                            <AUDITINFO></AUDITINFO>
+                            <!-- 审核时间 -->
+                            <AUDITDATE></AUDITDATE>
+                            <!-- 审核人姓名 -->
+                            <AUDITOR_NAME>审计人4</AUDITOR_NAME>
+                            <!-- 审核机构 -->
+                            <AUDIT_ORG></AUDIT_ORG>
+                        </AUDIT_INFO>
+                        <!-- 审核信息结束 -->
+                    </HEALTH_EXAM_RECORD>
+            </HEALTH_EXAM_RECORD_LIST>
+    </EventBody>
+    <!--主体结束-->
+</DataExchange>

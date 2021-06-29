@@ -18,7 +18,7 @@ public class EnterpriseInfo implements Serializable {
     private String id;
 
     @NotBlank(message = "用人单位名称不能为空")
-    private String name;
+    private String enterpriseName;
 
     @NotBlank(message = "统一社会信用代码不能为空")
     private String creditCode;
@@ -167,12 +167,12 @@ public class EnterpriseInfo implements Serializable {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getEnterpriseName() {
+        return enterpriseName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setEnterpriseName(String enterpriseName) {
+        this.enterpriseName = enterpriseName;
     }
 
     public String getCreditCode() {
